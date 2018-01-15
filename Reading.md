@@ -1,4 +1,4 @@
-# Resources and Readings 
+# Reading, Schedule, Resources 
 
 We'll be using Garrett Grolemund's and Hadley Wickham's freely available [R for Data Science](http://r4ds.had.co.nz/) as an R resource and [A research synthesis on child welfare disproportionality and disparities](https://www.cssp.org/publications/child-welfare/alliance/Disparities-and-Disproportionality-in-Child-Welfare_An-Analysis-of-the-Research-December-2011.pdf) produced by the Center for the Study of Social Policy and others as a subject resource. Additional materials are either freely available and linked here or provided on our collab page. Most of the assigned reading will occur in the first few weeks.
 

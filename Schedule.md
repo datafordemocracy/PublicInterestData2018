@@ -36,7 +36,5 @@ Things start to get a little more free-flowing here as we spend more time workin
 
 Also, there's a potentially relevant research talk today for those interested: [Beyond Reading, Writing and Arithmetic: The Role of Teachers and Schools in Reporting Child Maltreatment](https://curry.virginia.edu/faculty-research/join-us/curry-education-research-lectureship-series), Maria Fitzpatrick, Associate Professor, Cornell University, 11-12:30, Holloway Hall (Rm 116), Bavaro Hall
 
-Maria Fitzpatrick, Associate Professor, Cornell University
-
 ## February 23, 2018 and beyond
 Updates as needed

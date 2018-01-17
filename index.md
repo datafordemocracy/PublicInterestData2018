@@ -1,6 +1,6 @@
 ---
 title: UVA Public Interest Data Lab
-description: Minimal tutorial on making a simple website with GitHub Pages
+description: Project site for UVA's Spring 2018 Public Interest Data Lab
 ---
 The Public Interest Data Lab is intended to provide data science experience to students in service of the public interest. We have three goals:
 

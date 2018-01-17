@@ -21,7 +21,7 @@ Our clients will be joining us this day as we delve into the prior research arou
 * Section 3: 47-49, 62-63, 64-70 
 * Section 4: 50-61 
 
-In the second half of the class, we'll start reviewing the data dictionary for the data provided by DSS. Working in groups, we'll begin brainstorming questions and hypotheses that can be addressed with the data, possibliities for supplementing the data, and more. Groups will submit notes that will be shared with the lab.
+In the second part of the class, we'll start reviewing the data dictionary for the data provided by DSS. Working in groups, we'll begin brainstorming questions and hypotheses that can be addressed with the data, possibliities for supplementing the data, and more. Groups will submit notes that will be shared with the lab.
 
 ## February 2, 2018
 Lab members will have access to the data after our 1/26 meeting and can start exploring the data right away. In the first part of class, we'll draft a formal problem statement, discuss the ideas generated in last week's class, and devise a more formal research plan. We'll spend the second half of class going over some concepts of working in R and working with (potentially different aspects of) the data in groups.

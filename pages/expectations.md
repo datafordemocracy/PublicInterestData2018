@@ -2,6 +2,8 @@
 title: Lab Expectations
 ---
 
+## What to expect
+
 This is an exercise in learning together, which demands doing together. We'll spend some of our time developing common skills and knowledge (particularly in the early weeks); some of our time discussing our progress, generating ideas, and providing feedback; and some of our time actively working on the project, exploring data, developing solutions, and documenting our work (more so in the later weeks). 
 
 ## Grading

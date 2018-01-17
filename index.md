@@ -11,3 +11,6 @@ The Public Interest Data Lab is intended to provide data science experience to s
 ## Spring 2018 Project
 
 Our client for this spring is the City of Charlottesville's Department of Social Services who wish to understand whether there is racial disproportionality or racially disparate outcomes in local child welfare services, and if so, to what extent and at what stages. There are a number of ways we might investigate this question, depending on the nature of the data the DSS records as well as other data we might use to supplement, merge with, or contextualize the data. 
+
+* [Lab Expectations](/pages/expectations.html)
+* [Lab Schedule](/pages/schedule.html)

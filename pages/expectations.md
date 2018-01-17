@@ -1,6 +1,10 @@
-# Lab Expectations and Grading
+---
+title: Lab Expectations
+---
 
-This is an exercise in learning together, which demands doing together. We'll spend some of our time developing common skills and knowledge (particularly in the early weeks); some of our time discussing our progress, generating ideas, and providing feedback; and some of our time actively working on the project, exploring data, developing solutions, and documenting our work (more so in the later weeks). The lab is worth 1 credit hour, and will be graded on the basis of:
+This is an exercise in learning together, which demands doing together. We'll spend some of our time developing common skills and knowledge (particularly in the early weeks); some of our time discussing our progress, generating ideas, and providing feedback; and some of our time actively working on the project, exploring data, developing solutions, and documenting our work (more so in the later weeks). 
+
+The lab is worth 1 credit hour, and will be graded on the following basis:
 
 * Contributions during Friday's lab times (33\%). Come prepared, chime in with ideas and ask questions during our discussion time, help develop solutions during our hacking time, complete work you've agreed to in the in between times. Lab members will have a chance to evaluate the contributions of one another as well.
 * Submission of a weekly progress report, beginning February 2 (33\%). By Friday at 10am, each lab member should send an email to the collab list with two short bullet points (one to four sentences each) summarizing:

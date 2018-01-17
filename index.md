@@ -1,3 +1,9 @@
+---
+layout: page
+title: simple site
+tagline: Easy websites with GitHub Pages
+description: Minimal tutorial on making a simple website with GitHub Pages
+---
 The Public Interest Data Lab is intended to provide data science experience to students in service of the public interest. We have three goals:
 
 * Make progress on a project that advances the public interest or social good, in service of a client's goals. And have a project to point to at the end, an example of your work.

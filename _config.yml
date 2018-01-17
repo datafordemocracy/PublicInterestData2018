@@ -1,7 +1,3 @@
 theme: jekyll-theme-minimal
 title: UVA Public Interest Data Lab
 description: Project site for UVA's Spring 2018 Public Interest Data Lab
-
-
-production_url : http://datafordemocracy.github.io/PublicInterestData2018
-BASE_PATH : http://datafordemocracy.github.io/PublicInterestData2018

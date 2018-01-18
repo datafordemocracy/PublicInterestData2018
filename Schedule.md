@@ -1,6 +1,10 @@
-# Reading, Schedule, Resources 
+# Resources
 
 We'll be using Garrett Grolemund's and Hadley Wickham's freely available [R for Data Science](http://r4ds.had.co.nz/) as an R resource and [A research synthesis on child welfare disproportionality and disparities](https://www.cssp.org/publications/child-welfare/alliance/Disparities-and-Disproportionality-in-Child-Welfare_An-Analysis-of-the-Research-December-2011.pdf) produced by the Center for the Study of Social Policy and others as a subject resource. Additional materials are either freely available and linked here or provided on our collab page. Most of the assigned reading will occur in the first few weeks.
+
+The UVA Library and other research support partners across grounds offer free workshops and training opportunities that might be of interest to some, especially those new to tools like R. You can find a list of the [Libray offerings here](http://data.library.virginia.edu/training/), and a full list of workshops by [partner organizations here](http://cadre.virginia.edu/service-detail/education) (the workshops in the health sciences library and school of medicine are open to all, but tend to fill up quickly).
+
+# Schedule and Reading
 
 ## January 19, 2018
 Since we only have 10 weeks together, we'll be diving in on day one with discussions about working collaboriatively and for a client, ethical considerations and data security, and some background on our research question. 

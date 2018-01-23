@@ -11,3 +11,5 @@ To insure the security of [moderately sensitive client data](http://security.vir
 4. Lab members should not print the data file.
 5. When working with the data in non-private spaces, lab members should not leave their computers unattended. 
 6. Lab members should not show or share the data file with colleagues outside the lab. If seeking help with code or analysis from those outside the lab, do not display the data frame in the data viewer.
+
+Relatedly, while we will share code and the reasons and choices that go into generating the analysis, we will communicate the *results* of our work to our client. Our client is responsible for disseminating and communicating the results outward.

@@ -10,4 +10,4 @@ To insure the security of [moderately sensitive client data](http://security.vir
 3. Lab members should not make any additional copies of the data file, including no copies on portable storage devices, and no copies on public machines.
 4. Lab members should not print the data file.
 5. When working with the data in non-private spaces, lab members should not leave their computers unattended. 
-6. When seeking help with code or analysis from those outside the lab, lab members should not share or show the full data file to colleagues outside the lab.
+6. Lab members should not show or share the data file with colleagues outside the lab>. If seeking help with code or analysis from those outside the lab, do not display the data frame in the data viewer.

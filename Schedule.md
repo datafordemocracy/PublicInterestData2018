@@ -36,7 +36,7 @@ At the start of this session, we will draft a formal problem statement based on 
 * [R4DS Chapters 9-18](http://r4ds.had.co.nz/wrangle-intro.html)
 
 ## February 16, 2018
-Things start to get a little more free-flowing here as we spend more time working on the data and project, but we'll definitely spend tome time at the beginning of class sharing progress and providing feedback.
+Things start to get a little more free-flowing here as we spend more time working on the data and project, but we'll definitely spend tome time at the beginning of class sharing progress and providing feedback, and some time talking about modeling.
   * [R4DS Chapters 22-28](http://r4ds.had.co.nz/model-intro.html)
 
 Also, there's a potentially relevant research talk today for those interested: [Beyond Reading, Writing and Arithmetic: The Role of Teachers and Schools in Reporting Child Maltreatment](https://curry.virginia.edu/faculty-research/join-us/curry-education-research-lectureship-series), Maria Fitzpatrick, Associate Professor, Cornell University, 11-12:30, Holloway Hall (Rm 116), Bavaro Hall

@@ -25,7 +25,7 @@ Our clients will be joining us this day as we delve into the prior research arou
 * ~~Section 3: 47-49, 62-63, 64-70~~
 * Section 4: 50-61 
 
-For next week, review the data dictionary for the data provided by DSS. Each lab member should email me by 10am Friday (2/2) with one to three research questions she or he believes can fruitfully be answered by the DSS data, or this data supplemented by other additional data (e.g., census-based data). This will replace the weekly update scheduled to begin February 2.
+For next week, review the data dictionary for the data provided by DSS. Each lab member should email me by 10am Friday (2/2) one to three research questions she or he believes can fruitfully be answered by the DSS data, or this data supplemented by other additional data (e.g., census-based data); in the same email, include additional questions you have about the data (no need to include questions I've already raised on the document). This will replace the weekly update scheduled to begin February 2.
 
 ## February 2, 2018
 Lab members will have access to the data after our 1/26 meeting and can start exploring the data right away. In the first part of class, we'll go over the submitted questions, consider possibilities for supplementing the DSS data, and pin down a series of research questions we will pursue. We'll parcel out additional tasks to individual or teams of lab members as needed -- e.g., ensuring the data lends itself to a proposed question, verifying the availability of supplemental data, creating a schema for capturing and presenting the work. We'll spend the second half of class going over some concepts of working in R and working with (potentially different aspects of) the data in groups.

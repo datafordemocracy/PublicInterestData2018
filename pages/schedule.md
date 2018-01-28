@@ -22,21 +22,22 @@ Our clients will be joining us this day as we delve into the prior research arou
 * Section 0 (everybody): pp. 7-22
 * Section 1: pp. 23-28, 43-46
 * Section 2: pp. 29-42 
-* Section 3: 47-49, 62-63, 64-70 
+* ~~Section 3: 47-49, 62-63, 64-70~~
 * Section 4: 50-61 
 
-In the second part of the class, we'll start reviewing the data dictionary for the data provided by DSS. Working in groups, we'll begin brainstorming questions and hypotheses that can be addressed with the data, possibliities for supplementing the data, and more. Groups will submit notes that will be shared with the lab.
+For next week, review the data dictionary for the data provided by DSS. Each lab member should email me by 10am Friday (2/2) with one to three research questions she or he believes can fruitfully be answered by the DSS data, or this data supplemented by other additional data (e.g., census-based data). This will replace the weekly update scheduled to begin February 2.
 
 ## February 2, 2018
-Lab members will have access to the data after our 1/26 meeting and can start exploring the data right away. In the first part of class, we'll draft a formal problem statement, discuss the ideas generated in last week's class, and devise a more formal research plan. We'll spend the second half of class going over some concepts of working in R and working with (potentially different aspects of) the data in groups.
+Lab members will have access to the data after our 1/26 meeting and can start exploring the data right away. In the first part of class, we'll go over the submitted questions, consider possibilities for supplementing the DSS data, and pin down a series of research questions we will pursue. We'll parcel out additional tasks to individual or teams of lab members as needed -- e.g., ensuring the data lends itself to a proposed question, verifying the availability of supplemental data, creating a schema for capturing and presenting the work. We'll spend the second half of class going over some concepts of working in R and working with (potentially different aspects of) the data in groups.
 * [R4DS Chapters 1-8](http://r4ds.had.co.nz/introduction.html)
 
 ## February 9, 2018
-Things start to get a little more free-flowing here as we spend more time working on the data and project. We'll spend some time going over some data wrangling concepts as well as sharing progress and providing feedback.
+At the start of this session, we will draft a formal problem statement based on last week's discussion and initial investigations into the data and availability of supplementary data. We'll devise a more formal research plan, splitting up into teams to tackle different pieces of the research plan. We'll spend some time going over some data wrangling concepts.
 * [R4DS Chapters 9-18](http://r4ds.had.co.nz/wrangle-intro.html)
 
 ## February 16, 2018
-* [R4DS Chapters 22-28](http://r4ds.had.co.nz/model-intro.html)
+Things start to get a little more free-flowing here as we spend more time working on the data and project, but we'll definitely spend tome time at the beginning of class sharing progress and providing feedback.
+  * [R4DS Chapters 22-28](http://r4ds.had.co.nz/model-intro.html)
 
 Also, there's a potentially relevant research talk today for those interested: [Beyond Reading, Writing and Arithmetic: The Role of Teachers and Schools in Reporting Child Maltreatment](https://curry.virginia.edu/faculty-research/join-us/curry-education-research-lectureship-series), Maria Fitzpatrick, Associate Professor, Cornell University, 11-12:30, Holloway Hall (Rm 116), Bavaro Hall
 

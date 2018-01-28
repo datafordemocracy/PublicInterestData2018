@@ -29,11 +29,11 @@ For next week, review the data dictionary for the data provided by DSS. Each lab
 
 ## February 2, 2018
 Lab members will have access to the data after our 1/26 meeting and can start exploring the data right away. In the first part of class, we'll go over the submitted questions, consider possibilities for supplementing the DSS data, and pin down a series of research questions we will pursue. We'll parcel out additional tasks to individual or teams of lab members as needed -- e.g., ensuring the data lends itself to a proposed question, verifying the availability of supplemental data, creating a schema for capturing and presenting the work. We'll spend the second half of class going over some concepts of working in R and working with (potentially different aspects of) the data in groups.
-* [R4DS Chapters 1-8](http://r4ds.had.co.nz/introduction.html)
+* [R4DS Chapters 1,2,4,5,6,8,15,18](http://r4ds.had.co.nz/introduction.html)
 
 ## February 9, 2018
 At the start of this session, we will draft a formal problem statement based on last week's discussion and initial investigations into the data and availability of supplementary data. We'll devise a more formal research plan, splitting up into teams to tackle different pieces of the research plan. We'll spend some time going over some data wrangling concepts.
-* [R4DS Chapters 9-18](http://r4ds.had.co.nz/wrangle-intro.html)
+* [R4DS Chapters 3,7,9,10,11,12,13,14,16](http://r4ds.had.co.nz/wrangle-intro.html)
 
 ## February 16, 2018
 Things start to get a little more free-flowing here as we spend more time working on the data and project, but we'll definitely spend tome time at the beginning of class sharing progress and providing feedback, and some time talking about modeling.

@@ -14,6 +14,9 @@ To both parse and supplement these, lab members proposed additional research que
 4. Is there a difference in length of stay for kids of the minority race vs. non-minority?
 5. Is there a relationship between the race of the referred clients and the rate of screened out applications? 
 6. What is the ratio of colored children referred to the CPS and children referred to CPS as the denominator?
+7. Are black children more likely to be placed with relatives than other children? Do they spend more time in out of home placement?
+8. Is there a correlation between race and the decision to send the case to either investigation or family assessment? Given that family assessments don’t make a finding that stays in the parent’s records while investigations do, this could be a potential disparity in outcomes for the parents. 
+9. Is there a correlation between response priority and race?
 
 
 ## Initial data questions
@@ -38,8 +41,12 @@ New questions about the data posed by lab members:
 Referral data
 1. Response Priority - How long later does the Moderate and Low get processed?
 2. How often can the reporter referred a child? For example, if the caller finds out that the application was screened out, can he/she immediately put in a referral again?
+3. How is response priority (R1,R2,R3) determined? By a screening tool or individual?
+4. What is the difference between “Unable To Determine” and “Race Unknown”?
+5. Some cases are listed as having no “meaningful”, others have first contact but no response priority. Why is that?
 
 Placement data
 1. Under “Placement History” what does it mean when a child exits because the “Placement cannot meet the child’s behavioral needs”? Are we able to access data on where the child goes after leaving for this reason? Also, is this determined by the foster family or by a caseworker?
 2. AWOL_BEGIN_DT — what is this measurement? What does date beginning duration of gap in care (with no exit) mean?
+
 

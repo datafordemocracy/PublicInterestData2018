@@ -23,13 +23,17 @@ To both parse and supplement these, lab members proposed additional research que
 13. Which months are more likely to receive more meaningful contact?
 14. Will there be a relationship between "Face to Face Count" and the Case Begin and End Date? Does more contact with DSS bode for a better, same, or worse outcome for the child? Are there racial disparities in contact with DSS?
 
-## Initial data questions
-Questions about the data from the codebook:
+## Data questions
 
 Referral data
 1. Case id: distinction between cases and clients; 222222222222 appears for cases that are screened out (but not all screened out cases) or for cases that are closed (but not all closed cases)?
 2. Meaning of disposition alternatives (DRS, Founded level 1,2,3)?
 3. Difference between meaningful first contact and first contact?
+4. Response Priority - How long later does the Moderate and Low get processed?
+5. How often can the reporter referred a child? For example, if the caller finds out that the application was screened out, can he/she immediately put in a referral again?
+6. How is response priority (R1,R2,R3) determined? By a screening tool or individual?
+7. What is the difference between “Unable To Determine” and “Race Unknown”?
+8. Some cases are listed as having no “meaningful”, others have first contact but no response priority. Why is that?
 
 Ongoing data
 1. Relation of Case Type Begin Date and Client Involvement Start date; how these relate to referral dates?
@@ -40,22 +44,10 @@ Foster care data
 2. Relation of Custody End to Exit Care Date?
 3. Relation of Discharge Date to Custoy End; discharge is when case file is closed?
 
-New questions about the data posed by lab members:
-
-Potentially all datasets
-1. From my point of view, we can use SSN to represent each child, since the case ID, client ID and referral ID can be the same for different children. By the way, can we ignore these three variables?
-2. For all questions about race, some races may have more people in Charlottesville, therefore their cases are definitely more than other races. In this case, we may not be able to know whether race matter in this area. How can we solve this problem?
-
-
-Referral data
-1. Response Priority - How long later does the Moderate and Low get processed?
-2. How often can the reporter referred a child? For example, if the caller finds out that the application was screened out, can he/she immediately put in a referral again?
-3. How is response priority (R1,R2,R3) determined? By a screening tool or individual?
-4. What is the difference between “Unable To Determine” and “Race Unknown”?
-5. Some cases are listed as having no “meaningful”, others have first contact but no response priority. Why is that?
-
 Placement data
 1. Under “Placement History” what does it mean when a child exits because the “Placement cannot meet the child’s behavioral needs”? Are we able to access data on where the child goes after leaving for this reason? Also, is this determined by the foster family or by a caseworker?
 2. AWOL_BEGIN_DT — what is this measurement? What does date beginning duration of gap in care (with no exit) mean?
 
-
+Potentially all datasets
+1. From my point of view, we can use SSN to represent each child, since the case ID, client ID and referral ID can be the same for different children. By the way, can we ignore these three variables?
+2. For all questions about race, some races may have more people in Charlottesville, therefore their cases are definitely more than other races. In this case, we may not be able to know whether race matter in this area. How can we solve this problem?

@@ -35,6 +35,8 @@ Lab members will have access to the data after our 1/26 meeting and can start ex
 At the start of this session, we will draft a formal problem statement based on last week's discussion and initial investigations into the data and availability of supplementary data. We'll devise a more formal research plan, splitting up into teams to tackle different pieces of the research plan. We'll spend some time going over some data wrangling concepts.
 * [R4DS Chapters 3,7,9,10,11,12,13,14,16](http://r4ds.had.co.nz/wrangle-intro.html)
 
+Also, there's a workshop on [using Census data Wednesday, February 7 from 2-3](http://cal.lib.virginia.edu/event/3793601) in the Brown Science & Engineering Library!
+
 ## February 16, 2018
 Things start to get a little more free-flowing here as we spend more time working on the data and project, but we'll definitely spend tome time at the beginning of class sharing progress and providing feedback, and some time talking about modeling.
   * [R4DS Chapters 22-28](http://r4ds.had.co.nz/model-intro.html)

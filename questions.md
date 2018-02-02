@@ -15,21 +15,21 @@ To both parse and supplement these, lab members proposed additional research que
 ## Initial data questions
 Questions about the data from the codebook:
 
-### Referral data
+Referral data
 1. Case id: distinction between cases and clients; 222222222222 appears for cases that are screened out (but not all screened out cases) or for cases that are closed (but not all closed cases)?
 2. Meaning of disposition alternatives (DRS, Founded level 1,2,3)?
 3. Difference between meaningful first contact and first contact?
 
-### Ongoing data
+Ongoing data
 1. Relation of Case Type Begin Date and Client Involvement Start date; how these relate to referral dates?
 2. Relation of Case Type End Data and Client Involvement End date?
 
-## Foster care data
+Foster care data
 1. Relation of Custody Date to Enter Care date, should these be the same?
 2. Relation of Custody End to Exit Care Date?
 3. relation of Discharge Date to Custoy End; discharge is when case file is closed?
 
 ## Additional questions about the data:
 
-### Placement data
+Placement data
 1. Under “Placement History” what does it mean when a child exits because the “Placement cannot meet the child’s behavioral needs”? Are we able to access data on where the child goes after leaving for this reason? Also, is this determined by the foster family or by a caseworker?

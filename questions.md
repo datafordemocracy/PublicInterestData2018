@@ -33,8 +33,7 @@ Foster care data
 2. Relation of Custody End to Exit Care Date?
 3. Relation of Discharge Date to Custoy End; discharge is when case file is closed?
 
-## Additional questions about the data:
-Questions posed by lab members:
+New questions about the data posed by lab members:
 
 Referral data
 1. Response Priority - How long later does the Moderate and Low get processed?

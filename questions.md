@@ -17,7 +17,11 @@ To both parse and supplement these, lab members proposed additional research que
 7. Are black children more likely to be placed with relatives than other children? Do they spend more time in out of home placement?
 8. Is there a correlation between race and the decision to send the case to either investigation or family assessment? Given that family assessments don’t make a finding that stays in the parent’s records while investigations do, this could be a potential disparity in outcomes for the parents. 
 9. Is there a correlation between response priority and race?
-
+10. What factors are related to the initial decision of screening in or out a child when they are referred?
+11. Which race has the most cases? 
+12. Who is more likely to report a case? (we can advocate people in that industry to work harder in this area, so that more children will be helped)
+13. Which months are more likely to receive more meaningful contact?
+14. Will there be a relationship between "Face to Face Count" and the Case Begin and End Date? Does more contact with DSS bode for a better, same, or worse outcome for the child? Are there racial disparities in contact with DSS?
 
 ## Initial data questions
 Questions about the data from the codebook:
@@ -37,6 +41,11 @@ Foster care data
 3. Relation of Discharge Date to Custoy End; discharge is when case file is closed?
 
 New questions about the data posed by lab members:
+
+Potentially all datasets
+1. From my point of view, we can use SSN to represent each child, since the case ID, client ID and referral ID can be the same for different children. By the way, can we ignore these three variables?
+2. For all questions about race, some races may have more people in Charlottesville, therefore their cases are definitely more than other races. In this case, we may not be able to know whether race matter in this area. How can we solve this problem?
+
 
 Referral data
 1. Response Priority - How long later does the Moderate and Low get processed?

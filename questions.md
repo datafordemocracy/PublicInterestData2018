@@ -11,6 +11,10 @@ To both parse and supplement these, lab members proposed additional research que
 1. How does the demographic of foster care children change over time (1999-2017)?
 2. Was there racial bias in First Reporter Relations and meaningful contact?
 3. Are in home investigations of non-white families more likely to be founded than white families? Are they founded at higher levels?
+4. Is there a difference in length of stay for kids of the minority race vs. non-minority?
+5. Is there a relationship between the race of the referred clients and the rate of screened out applications? 
+6. What is the ratio of colored children referred to the CPS and children referred to CPS as the denominator?
+
 
 ## Initial data questions
 Questions about the data from the codebook:
@@ -27,9 +31,16 @@ Ongoing data
 Foster care data
 1. Relation of Custody Date to Enter Care date, should these be the same?
 2. Relation of Custody End to Exit Care Date?
-3. relation of Discharge Date to Custoy End; discharge is when case file is closed?
+3. Relation of Discharge Date to Custoy End; discharge is when case file is closed?
 
 ## Additional questions about the data:
+Questions posed by lab members:
+
+Referral data
+1. Response Priority - How long later does the Moderate and Low get processed?
+2. How often can the reporter referred a child? For example, if the caller finds out that the application was screened out, can he/she immediately put in a referral again?
 
 Placement data
 1. Under “Placement History” what does it mean when a child exits because the “Placement cannot meet the child’s behavioral needs”? Are we able to access data on where the child goes after leaving for this reason? Also, is this determined by the foster family or by a caseworker?
+2. AWOL_BEGIN_DT — what is this measurement? What does date beginning duration of gap in care (with no exit) mean?
+

@@ -32,10 +32,21 @@ Lab members will have access to the data after our 1/26 meeting and can start ex
 * [R4DS Chapters 1,2,4,5,6,8,15,18](http://r4ds.had.co.nz/introduction.html)
 
 ## February 9, 2018
-At the start of this session, we will draft a formal problem statement based on last week's discussion and initial investigations into the data and availability of supplementary data. We'll devise a more formal research plan, splitting up into teams to tackle different pieces of the research plan. We'll spend some time going over some data wrangling concepts.
+After reviewing last week's work, we'll draft a formal problem statement based on last week's discussion and initial investigations into the data and availability of supplementary data. We'll devise a more formal research plan, splitting up into teams to tackle different pieces of the research plan. We'll spend some time going over some data wrangling concepts.
 * [R4DS Chapters 3,7,9,10,11,12,13,14,16](http://r4ds.had.co.nz/wrangle-intro.html)
 
 Also, there's a workshop on [using Census data Wednesday, February 7 from 2-3](http://cal.lib.virginia.edu/event/3793601) in the Brown Science & Engineering Library!
+
+**Today's Agenda**
+
+Time (ish) | Task/Goal
+--- | ---
+12:00 | Code review, each group will review another group's initial code and provide suggestions for improvement
+12:20 | Report progress on supplemental tasks (no more than 10 minutes each) - exploring/recommending census data, exploring/recommending cville open data portal data, and clarifying questions about the data.
+12:45 | Problem statement -- in groups, draft initial problem statement following the [DataKind template from week 1](https://drive.google.com/file/d/0Bxn_Q60v2F7wM01GcU9rbXVXRjQ/view), slides 16-29
+1:00 | Reporting/refining a common problem statement
+1:15 | Wrangling questions in R -- what do we need to know? E.g., aggregating, merging/joining, graphing, dates/times? 
+1:40 | Groups review initial review of code and implement improvements.
 
 ## February 16, 2018
 Things start to get a little more free-flowing here as we spend more time working on the data and project, but we'll definitely spend tome time at the beginning of class sharing progress and providing feedback, and some time talking about modeling.

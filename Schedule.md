@@ -37,9 +37,9 @@ At the start of this session, we will draft a formal problem statement based on 
 
 Also, there's a workshop on [using Census data Wednesday, February 7 from 2-3](http://cal.lib.virginia.edu/event/3793601) in the Brown Science & Engineering Library!
 
-**Agenda**
+**Today's Agenda**
 
-Approximate time | Task/Goal
+Time (ish) | Task/Goal
 --- | ---
 12:00 | Code review, each group will review another group's initial code and provide suggestions for improvement
 12:20 | Report progress on supplemental tasks (no more than 10 minutes each) - exploring/recommending census data, exploring/recommending cville open data portal data, and clarifying questions about the data.

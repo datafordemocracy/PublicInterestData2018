@@ -43,7 +43,7 @@ Also, there's a workshop on [using Census data Wednesday, February 7 from 2-3](h
 
 Time (ish) | Task/Goal
 --- | ---
-12:00 | Code review, each group will review another group's initial code and provide suggestions for improvement
+12:00 | [Code review](codereview.html), each group will review another group's initial code and provide suggestions for improvement
 12:20 | Report progress on supplemental tasks (no more than 10 minutes each) - exploring/recommending census data, exploring/recommending cville open data portal data, and clarifying questions about the data.
 12:45 | Problem statement -- in groups, draft initial problem statement following the [DataKind template from week 1](https://drive.google.com/file/d/0Bxn_Q60v2F7wM01GcU9rbXVXRjQ/view), slides 16-29
 1:00 | Reporting/refining a common problem statement

@@ -37,6 +37,14 @@ At the start of this session, we will draft a formal problem statement based on 
 
 Also, there's a workshop on [using Census data Wednesday, February 7 from 2-3](http://cal.lib.virginia.edu/event/3793601) in the Brown Science & Engineering Library!
 
+*Agenda*
+  12:00: Code review, each group will review another group's initial code and provide suggestions for improvement
+  12:20: Report progress on supplemental tasks (no more than 10 minutes each) - exploring/recommending census data, exploring/recommending cville open data portal data, and clarifying questions about the data.
+  12:45: Problem statement -- in groups, draft initial problem statement following the DataKind template from week 1
+  1:00: Reporting/refining a common problem statement
+  1:15: Wrangling questions in R -- what do we need to know?
+  1:40: Groups review initial review of code and implement improvements.
+
 ## February 16, 2018
 Things start to get a little more free-flowing here as we spend more time working on the data and project, but we'll definitely spend tome time at the beginning of class sharing progress and providing feedback, and some time talking about modeling.
   * [R4DS Chapters 22-28](http://r4ds.had.co.nz/model-intro.html)

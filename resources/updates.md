@@ -16,6 +16,7 @@
   * Second, girls and boys who are in the Legal Custody have different age distributions. For children whose age is below 8, boys are more likely to get into the Legal Custody. However, after 8, there are more girls getting into the Legal Custody.
   * Third, children from different races have different age distribution. For instance, African American children are more likely getting into the Legal Custody around age 1,5 and 15. However, white children are more likely to get into the Legal Custody at 16 and 17 years old.
 * NP: This week I worked on looking through the Charlottesville open data. I identified 4 data sets that may be useful to us. The census tracts have geographical and demographic information that is relevant to our project. The crime data may be used to assess the risk that a child may face in a geographical area. Finally, the real estate assessment may give us some indication of income. 
+* BE: NP uploaded the local, geographical data we thought would be useful from the Charlottesville Open Data Portal. The sets might relate to some of our lab's questions, to the census, or to foster children's exposure to social services or probability of harm. The open data chosen includes US Census Block Group Data, US Census Block Area, Crime Data, and Real Estate Current Assessments. Additionally, I had signed up for the "Help! I need to use the Census" workshop this week but had to miss that. 
 
 ### Group 3
 

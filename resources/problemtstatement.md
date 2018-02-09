@@ -11,14 +11,14 @@ Based on the DataKind model
 
 ### Take 2
 
-* ** We want to: **  visualize and subset data; 
-* ** Using: ** foster care data; 
-* ** So that: ** we can determine the most significant factors that lead to children being placed in (or exiting) foster care;
-* ** So that:**  the Charlottesville community can address specific groups or needs.
+* __We want to:__  visualize and subset data; 
+* __Using:__ foster care data; 
+* __So that:__ we can determine the most significant factors that lead to children being placed in (or exiting) foster care;
+* __So that:__  the Charlottesville community can address specific groups or needs.
 
 ### Take 3
 
-* ** We want to: **  statistically examine (1) if the proportion of referrals called in, screened in, and founded is the same for white and non-white children; and (2) if there is a difference in length of stay and placement between white and non-white children; 
-* ** Using: ** the DSS data; 
-* ** So that: ** we can examine if there is disproportionality;
-* ** So that:**  disproportionality/disparity can be addressed with changes in implementation to the process.
+* __We want to:__  statistically examine (1) if the proportion of referrals called in, screened in, and founded is the same for white and non-white children; and (2) if there is a difference in length of stay and placement between white and non-white children; 
+* __Using:__ the DSS data; 
+* __So that:__ we can examine if there is disproportionality;
+* __So that:__  disproportionality/disparity can be addressed with changes in implementation to the process.

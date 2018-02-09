@@ -4,7 +4,7 @@ Based on the DataKind model
 
 ### Take 1
 
-* ** We want to: **  compare referrals, process, and outcomes for children of differnet races; 
+* _We want to:_  compare referrals, process, and outcomes for children of differnet races; 
 * ** Using: ** statistical analysis, visualization, decision point parameters and population parameters; 
 * ** So that: ** we can determine whether there is racial disproportionality and/or disparity in the Charlottesville Child Welfare System, and report that information to inform policy;
 * ** So that:**  all children are treated fairly irrespective of race.

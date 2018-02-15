@@ -51,10 +51,18 @@ Time (ish) | Task/Goal
 1:40 | Groups review initial review of code and implement improvements.
 
 ## February 16, 2018
-Things start to get a little more free-flowing here as we spend more time working on the data and project, but we'll definitely spend tome time at the beginning of class sharing progress and providing feedback, and some time talking about modeling.
+We'll definitely spend time time at the beginning of class sharing progress and providing feedback, and demonstrating key data wrangling concepts. And we'll finalize the problem statement and draft some analysis plans.
   * [R4DS Chapters 22-28](http://r4ds.had.co.nz/model-intro.html)
 
 Also, there's a potentially relevant research talk today for those interested: [Beyond Reading, Writing and Arithmetic: The Role of Teachers and Schools in Reporting Child Maltreatment](https://curry.virginia.edu/faculty-research/join-us/curry-education-research-lectureship-series), Maria Fitzpatrick, Associate Professor, Cornell University, 11-12:30, Holloway Hall (Rm 116), Bavaro Hall
 
+**Today's Agenda**
+
+Time (ish) | Task/Goal
+--- | ---
+12:00 | Collective code review, each group will have 10 minutes to walk us through their code to read in, examine, format, and clean up a data set. We'll ask questions and make suggestions, and use examples from each other's code to demonstrate more general functions and processes. We'll also finalize some choices on how we'll incorporate race and ethnicity consistently.
+12:40 | Problem Statement, we'll refine a merged problem statement based on those we began last week, and use this to start outlining a sequence of analysis for each question.
+1:20 | Start analyzing, we'll break up into teams to tackle different pieces/questions and each group will outline a research and analysis strategy for their part of the analysis.
+
 ## February 23, 2018 and beyond
-Updates as needed
+We'll spend the first half updating one another on our progress, and talking about modeling choices and strategies. 

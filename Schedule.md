@@ -65,4 +65,4 @@ Time (ish) | Task/Goal
 1:20 | Start analyzing, we'll break up into teams to tackle different pieces/questions and each group will outline a research and analysis strategy for their part of the analysis.
 
 ## February 23, 2018 and beyond
-We'll spend the first half updating one another on our progress, and talking about modeling choices and strategies. And we'll talk about collaborative writing in ShareLaTeX!
+We'll spend the first half updating one another on our progress, and talking about modeling choices and strategies. And we'll talk about collaborative writing in [ShareLaTeX!](https://www.sharelatex.com/).

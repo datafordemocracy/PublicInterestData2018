@@ -22,3 +22,8 @@ Based on the DataKind model
 * __Using:__ the DSS data; 
 * __So that:__ we can examine if there is disproportionality;
 * __So that:__  disproportionality/disparity can be addressed with changes in implementation to the process.
+
+## Second Draft of Problem Statement, combined and refined
+
+* __We want to:__ (1) estimate baseline racial disproportionality in child welfare referrals and acceptances; (2) estimate racial disparity in post-referral decision points, both baseline disparity and modeling decision outcomes as a function of race and other characteristics; (3) estimate racial disparity in foster care outcomes, both baseline disparity and modeling outcomes as a function of race and other characteristics;
+* __Using:__ 

@@ -15,3 +15,4 @@ Our client for this spring is the City of Charlottesville's Department of Social
 * [Lab Expectations](pages/expectations.html)
 * [Lab Schedule](pages/schedule.html)
 * [Lab Data Agreement](pages/agreement.html)
+* [Problem Statement](pages/problemstatement.html)

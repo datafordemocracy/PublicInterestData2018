@@ -1,9 +1,9 @@
 ## Second Draft of Problem Statement, combined and refined
 
-* __We want to:__ estimate (1) baseline racial disproportionality in child welfare referrals and acceptances and active cases; (2)  racial disparity in post-referral decision points, both baseline disparity and modeling decision outcomes as a function of race and other characteristics; (3)  racial disparity in foster care outcomes, both baseline disparity and modeling outcomes as a function of race and other characteristics;
-* __Using:__ administrative data for Charlotesville from the Department of Social Services on (1) referrals for last three years and ongoing cases; (2) referrals for last three years (and ongoing cases?); (3) foster care cases and placement history for (last 17 years);
-* __So that:__ we can determine the presence and extent of racial disproportionatly and disparity in multiple outcomes and estimate the significance of race as a facotr in shaping these outcomes;
-* __So that:__ the DSS can understand where disparities occur in order to address these disparities and the Charlottesville community can make progress in ensuring all children are treated fairly. 
+* __We want to:__ estimate (1) baseline racial disproportionality in child welfare referrals and acceptances and in active cases; (2)  racial disparity in post-referral decision points, both baseline disparity and modeling decision outcomes as a function of race and other characteristics; (3)  racial disparity in foster care outcomes, both baseline disparity and modeling outcomes as a function of race and other characteristics;
+* __Using:__ administrative data for Charlottesville from the Department of Social Services on (1) referrals for last three years and ongoing cases; (2) referrals for last three years (and ongoing cases?); (3) foster care cases and placement history for (last 17 years?);
+* __So that:__ we can determine the presence and/or extent of racial disproportionality and disparity across multiple outcomes and estimate the significance of race as a factor in shaping these outcomes;
+* __So that:__ the DSS can understand where disparities occur in order to better address them and the Charlottesville community can make progress in ensuring all families and children are treated fairly. 
 
 ## First Draft of Problem Statements, three takes
 

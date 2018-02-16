@@ -1,3 +1,12 @@
+## 2018-02-16
+* MC: quick review of each group's code, more exploration of data, combine/revise problem statement for discussion and further revision, set Friday's agenda, read some literature on geographic context cited in the research synthesis.
+* MW: This week I edited my R script and responded to the comments. I'm not sure whether the comments were made by you or by other students, but they were very helpful for clarifying and potential errors I made. Things that I might have found clear after looking extensively at the data might not be obvious to an outsider, so in the future I need to provide answers to these questions in my analysis. I also looked at the referral data and did the code review/added comments.
+* HS: This week my group updated the code book with the additional information from Jenny. We also reviewed our code and incorporated the comments we received. This included adding more comments, grouping by case id and checking for outliers. One difficult part of the week was figuring out how to look for outliers in the data. We did a couple of things, but aren't sure if that is what to look for. I also created a version of the referral code with comments. 
+* CM: This week I got some more census and ACS data by block group, updated my script with a binary indicator of ongoing cases, a duration variable with a dummy data retrieval date (not sure when that was), and explored some new visualization! N
+* NP: Since last week in class our group realized that data visualization will be very important,  I am exploring new ways right now. Also, I am doing research about children’s psychology. I want to know whether we should keep exploring the age and gender effects. 
+* AW: I was able to go through the explore_referraldata and my group's ongoing_clients data searched up functions that I didn't understand and didn't have a full grasp of. I now have more background on how the data is structured and better understand what should be done.
+
+
 ## 2018-02-09
 * MC: updated explore_referraldata.R -- added comments, more cleaning, more exploration; set Friday's agenda, added code review questions
 

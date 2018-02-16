@@ -5,7 +5,7 @@
 * CM: This week I got some more census and ACS data by block group, updated my script with a binary indicator of ongoing cases, a duration variable with a dummy data retrieval date (not sure when that was), and explored some new visualization! N
 * NP: Since last week in class our group realized that data visualization will be very important,  I am exploring new ways right now. Also, I am doing research about children’s psychology. I want to know whether we should keep exploring the age and gender effects. 
 * AW: I was able to go through the explore_referraldata and my group's ongoing_clients data searched up functions that I didn't understand and didn't have a full grasp of. I now have more background on how the data is structured and better understand what should be done.
-
+* MW: This week I looked more into potential tests we can do to analyze the data. There is this spreadsheet-based application called Oracle Crystal Ball that can be used to find the "sensitivity" of various variables and the impact of their potential values on the ultimate output variable. This could be used if later one we want to run a regression analysis on how various factors impact the likelihood of a child with being screened in. There are also other analyses on the probability and sensitivity of various variables on an outcome, called the Monte Carlo and Tornado Analysis. I will be attending a session on using Crystal Ball this afternoon so I will have a better idea of how to use it afterward. 
 
 ## 2018-02-09
 * MC: updated explore_referraldata.R -- added comments, more cleaning, more exploration; set Friday's agenda, added code review questions

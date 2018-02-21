@@ -1,4 +1,4 @@
-## Second Draft of Problem Statement, combined and refined
+## Problem Statement (v2), combined and refined
 
 * __We want to:__ estimate (1) baseline racial disproportionality in child welfare referrals and acceptances and in active cases; (2)  racial disparity in post-referral decision points, both baseline disparity and modeling decision outcomes as a function of race and other characteristics; (3)  racial disparity in foster care outcomes, both baseline disparity and modeling outcomes as a function of race and other characteristics;
 * __Using:__ administrative data for Charlottesville from the Department of Social Services on (1) referrals for last three years and ongoing cases; (2) referrals for last three years (and ongoing cases?); (3) foster care cases and placement history for (last 17 years?);

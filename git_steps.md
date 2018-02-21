@@ -1,4 +1,4 @@
-## Git Steps
+## Git Steps<sup>1</sup>
 
 ### Overview
 
@@ -145,3 +145,4 @@ When you want to add the changes from your forked repository on GitHub to the so
 * [Git interactive tutorials](https://try.github.io/levels/1/challenges/1)
 * [Learn git branching](http://learngitbranching.js.org/)
 
+<sup>1</sup> Copied from publicpresidency repo, created by Michele and Gautam

@@ -1,3 +1,6 @@
+## 2018-02-23
+* MC: added code from each group to read in, check, format data (added a few comments or headers here and there); started a document on ShareLaTeX for collaborative writing; added git_steps.md from publicpresidency repo as guidance to lab members who want to fork the repo and contribute directly via pull requests (if this describes you and you want to walk through things, let me know); started analysis plan for problem statement q1; planned Friday's agenda
+
 ## 2018-02-16
 * MC: quick review of each group's code, more exploration of data, combine/revise problem statement for discussion and further revision, set Friday's agenda, read some literature on geographic context cited in the research synthesis.
 * MW: This week I edited my R script and responded to the comments. I'm not sure whether the comments were made by you or by other students, but they were very helpful for clarifying and potential errors I made. Things that I might have found clear after looking extensively at the data might not be obvious to an outsider, so in the future I need to provide answers to these questions in my analysis. I also looked at the referral data and did the code review/added comments.

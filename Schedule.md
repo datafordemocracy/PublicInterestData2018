@@ -71,7 +71,7 @@ We'll spend the first half updating one another on our progress, and talking abo
 
 Time (ish) | Task/Goal
 --- | ---
-12:00 | Sharing of and feedback on group progress reports (one for each enumerated portion of the [problem Statement](/resources/problemstatement.md)), including implications for how "race" is coded in analysis.
+12:00 | Sharing of and feedback on group progress reports (one for each enumerated portion of the [problem statement](/resources/problemstatement.md)), including implications for how "race" is coded in analysis.
 1:00 | Review of [regression models](http://r4ds.had.co.nz/model-basics.html) and the [ShareLaTeX!](https://www.sharelatex.com/) document.
 1:30 | Analysis work. Each group will ultimately generate (1) an R script that reads in, formats and wrangles, and cleans the data, starting with the code of our previous groups, but adapting as needed, and saved as `prep_yourchoice.R` and (2) an R sript that implements the analysis used in the report and saved as `analysis_yourchoice.R`. You may also want a script for exploration of the data that won't necessarily become part of the analysis, e.g., `exploratory_yourchoice.R`. 
 

@@ -1,5 +1,5 @@
 ## 2018-02-23
-* MC: added code from each group to read in, check, format data (added a few comments or headers here and there); started a document on ShareLaTeX for collaborative writing; added git_steps.md from publicpresidency repo as guidance to lab members who want to fork the repo and contribute directly via pull requests (if this describes you and you want to walk through things, let me know); started analysis plan for problem statement q1; planned Friday's agenda
+* MC: added code from each group to read in, check, format data (added a few comments or headers here and there); started a document on ShareLaTeX for collaborative writing; added git_steps.md from publicpresidency repo as guidance to lab members who want to fork the repo and contribute directly via pull requests (if this describes you and you want to walk through things, let me know); started analysis plan for problem statement q1 (see Q1update_feb22_mpc.doc, get_acs.R); planned Friday's agenda and prepped short regression review.
 
 ## 2018-02-16
 * MC: quick review of each group's code, more exploration of data, combine/revise problem statement for discussion and further revision, set Friday's agenda, read some literature on geographic context cited in the research synthesis.

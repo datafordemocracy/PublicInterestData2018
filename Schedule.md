@@ -64,7 +64,7 @@ Time (ish) | Task/Goal
 12:40 | [Problem Statement](/resources/problemstatement.md), we'll refine a merged problem statement based on those we began last week, and use this to start outlining a sequence of analysis for each question.
 1:20 | Start analyzing, we'll break up into teams to tackle different pieces/questions and each group will outline a research and analysis strategy for their part of the analysis.
 
-## February 23, 2018 and beyond
+## February 23, 2018
 We'll spend the first half updating one another on our progress, and talking about modeling choices and strategies. And we'll talk about collaborative writing in [ShareLaTeX!](https://www.sharelatex.com/).
 
 **Today's Agenda**
@@ -75,3 +75,16 @@ Time (ish) | Task/Goal
 1:00 | Review of [regression models](http://r4ds.had.co.nz/model-basics.html) and the [ShareLaTeX!](https://www.sharelatex.com/) document.
 1:30 | Analysis work. Each group will ultimately generate (1) an R script that reads in, formats and wrangles, and cleans the data, starting with the code of our previous groups, but adapting as needed, and saved as `prep_yourchoice.R` and (2) an R sript that implements the analysis used in the report and saved as `analysis_yourchoice.R`. You may also want a script for exploration of the data that won't necessarily become part of the analysis, e.g., `exploratory_yourchoice.R`. 
 
+
+## March 2, 2018
+Updates on progress, sharing the article review load, and working in groups. I want to be sure to reserve at least 20 minutes to talk with each group in more detail while the other group digs in on analysis, articles, adding to the document, etc.
+
+**Today's Agenda**
+
+Time (ish) | Task/Goal
+--- | ---
+12:00 | Sharing of and feedback on group progress (one for each enumerated portion of the [problem statement](/resources/problemstatement.md)).
+1:00 | Divvy up the articles
+1:10 | Confab with group 1 while group 2 works
+1:30 | Confab with group 2 while group 1 works
+1:50 | More on annotation of article (it's unlikely we'll have any time remaining, but hope springs eternal!)

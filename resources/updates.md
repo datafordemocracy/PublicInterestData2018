@@ -1,3 +1,6 @@
+## 2018-03-02
+* MC: pulled together some articles -- from the research synthesis and a search in web of science of work since 2011 -- read abstracts, downloaded ones that seemed most relevant, skimmed to situate it within our work, and sent out summary info to lab; sent race coding instructions. Downoaded and wrangled ACS 5-year estimates to generate estimates of children by race in Cville, merged with summary data on referrals by race (see `prep_basedisp.R`) and started lookiing at data (see `analysis_basedisp.R`). Updated GitHub and webpages with agenda.
+
 ## 2018-02-23
 * MC: added each group's code to read in, check, format data to GitHub (added a few comments or headers here and there); started a document on ShareLaTeX for collaborative report; started analysis plan for problem statement q1 (see `Q1update_feb22_mpc.doc,` `get_acs.R`); planned Friday's agenda and prepped short regression review; also added `git_steps.md` from publicpresidency repo as guidance to lab members who want to fork the repo and contribute directly via pull requests (if this describes you and you want to walk through things, let me know).
 

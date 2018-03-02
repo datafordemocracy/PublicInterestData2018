@@ -1,6 +1,16 @@
 ## 2018-03-02
 * MC: pulled together some articles -- from the research synthesis and a search in web of science of work since 2011 -- read abstracts, downloaded ones that seemed most relevant, skimmed to situate it within our work, and sent out summary info to lab; sent race coding instructions. Downoaded and wrangled ACS 5-year estimates to generate estimates of children by race in Cville, merged with summary data on referrals by race (see `prep_basedisp.R`) and started lookiing at data (see `analysis_basedisp.R`). Updated GitHub and webpages with agenda.
 
+### Group 1
+
+* NP: This week my group met and revised our work plan to include only questions relating to the referral and the on going data. We discussed some initial thoughts about exploring this data and how to code the new race variables. In the end, we split up different outcomes to graph visually with race to get a feel for the distribution of our data. We will present these in class. 
+* HS: This week my group met and revised our work plan to include only questions relating to the referral and the on going data. We discussed some initial thoughts about exploring this data and how to code the new race variables. In the end, we split up different outcomes to graph visually with race to get a feel for the distribution of our data. We will present these in class. 
+
+### Group 2
+
+* BA: Created three new variables for race based on the your email last week. Re-organizing the data since there are many dataframes in our R code last week. Tried to create more conscise and clear datasets. Explored the variables that can go into the models at decisions points discussed for the foster care data which has unique client ids. Copied the variables from the placement data to foster care dataframe,  the variables which were unique for clients such as number of placements and time in placements etc.
+* AW:  I played around with the data sets to do preliminary analysis, I had a hard time manipulating the data into the difference codings of race. I watched a couple videos on lynda.com but still had a little trouble applying it to our data. I look forward to learning what other people has done with the preliminary analysis in class, I think I'll learn a lot by seeing the different ways to do it. I have also read a couple chapters of the Child Maltreatment 2016 report.
+
 ## 2018-02-23
 * MC: added each group's code to read in, check, format data to GitHub (added a few comments or headers here and there); started a document on ShareLaTeX for collaborative report; started analysis plan for problem statement q1 (see `Q1update_feb22_mpc.doc,` `get_acs.R`); planned Friday's agenda and prepped short regression review; also added `git_steps.md` from publicpresidency repo as guidance to lab members who want to fork the repo and contribute directly via pull requests (if this describes you and you want to walk through things, let me know).
 

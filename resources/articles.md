@@ -15,15 +15,15 @@ __Group 1 and Group 2__ (two of these should be assigned to each group)
 
 * *bowman_etal_2009 - WI case: investigation, substantiation, removal
 * *washingtonstate_2008 - WA case: accept referral, disposition/risk, removal
-* *rolock_2008 - IL case: investigation, substantiation, enter foster care, exit foster care
-* *johnson_etal_2008 - MN case: substantiation, cps case, out of home care
+* *rolock_2008 - IL case: investigation, substantiation, enter foster care, exit foster care (AW)
+* *johnson_etal_2008 - MN case: substantiation, cps case, out of home care (AW)
 * harris_hackett_2008 - qual context of referral, investigation, removal, exit
 
 __Group 1 only__
 
-* *drake_etal_2009 - reporting
-* *krase_2013 - reporting
-* krase_2015 - reporting
+* *drake_etal_2009 - reporting (HS)
+* *krase_2013 - reporting (MW)
+* krase_2015 - reporting (JM)
 
 __Group 1 and Group 2__ (one of these should be assigned to each group)
 
@@ -33,9 +33,9 @@ __Group 1 and Group 2__ (one of these should be assigned to each group)
 
 __Group 2 only__
 
-* *kahn_hansen_2017 - foster care
-* *hines_etal_2007 - reunification
-* texasstate_2010 - TX case: removals from home, exiting substitute care
+* *kahn_hansen_2017 - foster care (BA)
+* *hines_etal_2007 - reunification (BA)
+* texasstate_2010 - TX case: removals from home, exiting substitute care (CM)
 * woodmass_etal_2017 - out of home placement
 
 __Anyone__

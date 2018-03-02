@@ -1,3 +1,10 @@
+## Initial Decision regarding inclusion of "race" as variable
+Let's try up to three codings of race
+
+* race4: white children, black children, multiracial children, other children (Asian, Native American, Native Hawaiian and Pacific Islander, unknown if present)
+* race2: white children, children of color (unknown if present)
+* race3: white (only) children, black and multiracial black children, other children (Asian, Native American, Native Hawaiian and Pacific Islander, non-black multiracial, unknown if present)
+
 ## Deliberations on inclusion of "race" as variable
 In response to my February 16 email:
 "everyone should send me an individual email with (1) your weekly update and (2) you’re considered opinion about how we should incorporate race into the models (e.g., white-black-multiracial-other? white alone–black and black multiracial-nonblack multiracial and others? White-nonwhite (though, as I said, I think that’s problematic for multiple reasons)? white and nonblack multiracial-black and black multiracial-black/white multiracial (Bharat's suggestion, though I may have botched it)? include non-exclusive binary indicators? Something else?"

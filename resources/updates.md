@@ -5,6 +5,8 @@
 
 * NP: This week my group met and revised our work plan to include only questions relating to the referral and the on going data. We discussed some initial thoughts about exploring this data and how to code the new race variables. In the end, we split up different outcomes to graph visually with race to get a feel for the distribution of our data. We will present these in class. 
 * HS: This week my group met and revised our work plan to include only questions relating to the referral and the on going data. We discussed some initial thoughts about exploring this data and how to code the new race variables. In the end, we split up different outcomes to graph visually with race to get a feel for the distribution of our data. We will present these in class. 
+* MW: I met with my team members to discuss how we should reframe our proposal to focus on the referral data. We came up with a few new variables, and decided which ones to do exploratory analysis on. I was assigned to graph the differences between first reporter relation for each race, which I uploaded to our team google drive.
+* MW: My group and I (Group 1) met and determined our new questions using only the Referral and Ongoing Clients data. We organized what charts we wanted to use to determine the relationship between race and the data points (we choose mostly bar charts for now) and split them up accordingly. I made the bar charts for (Acceptance Frequency vs. Race) and (Screened Out vs. Race) for each of the 3 definitions of race we defined last class to see any differences between the results. I also made a google powerpoint to help the group show their results while I am not there in person. 
 
 ### Group 2
 

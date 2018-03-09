@@ -4,7 +4,7 @@
 # 2. Generate Cville child population estimates by race, create childpop dataframe
 # 3. Load referral data, generate referral counts by race, add to childpop df
 # Michele Claibourn (mclaibourn@virginia.edu)
-# Updated: March 1, 2018
+# Updated: March 9, 2018 
 ####################################################################################
 
 rm(list=ls())
@@ -116,18 +116,23 @@ kids3 <- kids[3:8,] %>% # sum all groups except total and white
 
 childpop2 <- rbind(kids[1:2,], kids3) # add "Minority" to total, white
 
+# Calculate proportions
+childpop2 <- childpop2 %>% 
+  mutate(prop = estimate/totpop[1], pmoe = moe_prop(estimate, totpop[1], moe, totpop[2]))
+
 # update saved work
 rm(kids, kids2, kids3)
 save.image("cville_acs.Rdata")
+
 
 ####################################################################################
 # 3. Load referral data, generate referral counts by race, add to childpop df
 ####################################################################################
 setwd("/Volumes/NO NAME") 
-load("referral.RData")
-
+load("referral.RData") # created in explore_referraldata.R
 summary(referral$ref_date) # verify earliest and latest referral date
-# referral counts by race
+
+# referral counts by race (race4 categories)
 cwspop <- referral %>% 
   mutate(refyear = ifelse(ref_date < as.POSIXct("2015-07-01 00:00:00"), "cws15", 
                           ifelse(ref_date > as.POSIXct("2016-06-30 00:00:00"), "cws17",
@@ -138,6 +143,7 @@ cwspop <- referral %>%
   summarize(refs = n(), number = n_distinct(client_id)) %>% 
   mutate(moe = NA)
 
+# referral counts by race (race2 categories)
 cwspop2 <- referral %>% 
   mutate(refyear = ifelse(ref_date < as.POSIXct("2015-07-01 00:00:00"), "cws15", 
                           ifelse(ref_date > as.POSIXct("2016-06-30 00:00:00"), "cws17",
@@ -156,7 +162,10 @@ childlong <- childpop %>% mutate(refyear = "acs16", refs = NA) %>%
   select(refyear, race, refs, number, moe)
 
 # bind acs to cws
-cwspopacs <- bind_rows(cwspop, childlong)
+cwspopacs4 <- bind_rows(cwspop, childlong)
+# make race a factor (and order for visualization)
+cwspopacs4 <- cwspopacs4 %>% 
+  mutate(race = factor(race, levels = c("White", "Other", "Multi", "Black")))
 
 ####################################################################################
 #   b. reformat cwspop to join onto childpop (race4): acspopcws (wide)
@@ -169,10 +178,13 @@ cwstot <- cwspopwide %>% # get sum for "Total"
   mutate(race = "Total") %>% 
   select(race, everything())
 
+# Calculate proportions 
+cwspopwide <- cwspopwide %>% 
+  mutate(prop15 = cws15/cwstot$cws15, prop16 = cws16/cwstot$cws16, prop17 = cws17/cwstot$cws17)
 cwspopwide <- bind_rows(cwspopwide, cwstot) # add "Total" as row
 
 # join acs and cws
-acspopcws <- left_join(childpop, cwspopwide, by="race")
+acspopcws4 <- left_join(childpop, cwspopwide, by="race")
 
 ####################################################################################
 #   c. reformat childpop2 to bind onto cwspop2 (race2): cwspopacs2 (long)
@@ -183,6 +195,9 @@ childlong2 <- childpop2 %>% mutate(refyear = "acs16", refs = NA) %>%
 
 # bind acs to cws
 cwspopacs2 <- bind_rows(cwspop2, childlong2)
+# make race a factor (and order for visualization)
+cwspopacs2 <- cwspopacs2 %>% 
+  mutate(race = factor(race, levels = c("White", "Minority")))
 
 ####################################################################################
 #   d. reformat cwspop2 to join onto childpop2 (race2): acspopcws2 (wide)
@@ -195,6 +210,9 @@ cwstot2 <- cwspopwide2 %>% # get sum for "Total"
   mutate(race = "Total") %>% 
   select(race, everything())
 
+# Calculate proportions 
+cwspopwide2 <- cwspopwide2 %>% 
+  mutate(prop15 = cws15/cwstot$cws15, prop16 = cws16/cwstot$cws16, prop17 = cws17/cwstot$cws17)
 cwspopwide2 <- bind_rows(cwspopwide2, cwstot2) # add "Total" as row
 
 # join acs and cws
@@ -202,16 +220,16 @@ acspopcws2 <- left_join(childpop2, cwspopwide2, by="race")
 
 
 # update saved work
-rm(referral, referrers, childlong, childlong2, p, cwspopwide, cwspopwide2, cwstot, cwstot2)
+rm(referral, referrers, childpop, childpop2, childlong, childlong2, p, cwspopwide, cwspopwide2, cwstot, cwstot2, cwspop, cwspop2)
 setwd("~/Box Sync/mpc/dataForDemocracy/pidl/PIDL2018/code/acsdata/")
 save.image("cville_acs.Rdata")
 # load("cville_acs.Rdata")
 
 ####################################################################################
 # Key data objects
-# cwspopacs: acs estimates and cws totals by race4 in long format
-# acspopcws: acs estimates and cws totals by race4 in wide format
-# cwspopacs: acs estimates and cws totals by race2 in long format
-# acspopcws: acs estimates and cws totals by race2 in wide format
+# cwspopacs4: acs estimates and cws totals by race4 in long format
+# acspopcws4: acs estimates and cws totals by race4 in wide format
+# cwspopacs2: acs estimates and cws totals by race2 in long format
+# acspopcws2: acs estimates and cws totals by race2 in wide format
 ####################################################################################
 

@@ -13,7 +13,7 @@ __Everyone__
 
 __Group 1 and Group 2__ (two of these should be assigned to each group)
 
-* *bowman_etal_2009 - WI case: investigation, substantiation, removal
+* *bowman_etal_2009 - WI case: investigation, substantiation, removal (BE)
 * *washingtonstate_2008 - WA case: accept referral, disposition/risk, removal
 * *rolock_2008 - IL case: investigation, substantiation, enter foster care, exit foster care (AW)
 * *johnson_etal_2008 - MN case: substantiation, cps case, out of home care (AW)
@@ -22,13 +22,13 @@ __Group 1 and Group 2__ (two of these should be assigned to each group)
 __Group 1 only__
 
 * *drake_etal_2009 - reporting (HS)
-* *krase_2013 - reporting (MW)
+* *krase_2013 - reporting (MWo)
 * krase_2015 - reporting (JM)
 
 __Group 1 and Group 2__ (one of these should be assigned to each group)
 
-* *hornstein_etal_2013 - referral, substantiation, foster care
-* *maloney_etal_2017 - reporting, removal
+* *hornstein_etal_2013 - referral, substantiation, foster care (NPr)
+* *maloney_etal_2017 - reporting, removal (MWu)
 * rivaux_etal_2008 - close case vs. take action
 
 __Group 2 only__
@@ -39,5 +39,5 @@ __Group 2 only__
 * woodmass_etal_2017 - out of home placement
 
 __Anyone__
-* hines_etal_04 - research review (NP)
-* duarte_summers_2013 - recommendations (NP)
+* hines_etal_04 - research review (NPa)
+* duarte_summers_2013 - recommendations (NPa)

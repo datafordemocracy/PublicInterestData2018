@@ -2,15 +2,15 @@
 
 ### Estimate baseline racial disproportionality in child welfare referrals and acceptances from July 2014 to June 2017.
 
-1. Using data from the most recent [American Community Survey 5-year estimates (2012-2016)](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t), generate population estimates for children in Charlottesville by race and calculate proportions by race, incorporating the uncertainty represented by the 90% margins of error. See [`prep_basedisp.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataprep/prep_basedisp.R) for details. The detailed tables in the 5-year estimates were
-  * The combined population for sex by age (B01001)
-  * White alone population for sex by age (B01001A)
-  * Black or African-American alone for sex by age (B01001B)
-  * American Indian and Alaska Native alone for sex by age (B01001C)
-  * Asian alone for sex by age (B01001D)
-  * Native Hawaiian and Other Pacific Islander alone for sex by age (B01001E)
-  * Some other race alone for sex by age (B01001F)
-  * Two or more races for sex by age (B01001G)
+1. Using data from the most recent [American Community Survey 5-year estimates (2012-2016)](https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml?refresh=t), generate population estimates for children in Charlottesville by race and calculate proportions by race, incorporating the uncertainty represented by the 90% margins of error. See [`prep_basedisp.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataprep/prep_basedisp.R) for details. The detailed tables in the 5-year estimates were estimates for sex by age for
+  * The combined population (B01001)
+  * White alone population (B01001A)
+  * Black or African-American alone population (B01001B)
+  * American Indian and Alaska Native alone population (B01001C)
+  * Asian alone population (B01001D)
+  * Native Hawaiian and Other Pacific Islander alone population (B01001E)
+  * Some other race alone population (B01001F)
+  * Two or more races population (B01001G)
   
 2. Using the CWS referral data from June 2014-July 2016 from DSS, generate counts of children referred to CWS by race for each year (with years defined as June-July). Calculate proportions by race. See [`prep_basedisp.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataprep/prep_basedisp.R) for details.
 

@@ -88,3 +88,7 @@ Time (ish) | Task/Goal
 1:10 | Confab with group 1 while group 2 works
 1:30 | Confab with group 2 while group 1 works
 1:50 | More on annotation of article (it's unlikely we'll have any time remaining, but hope springs eternal!)
+
+
+## March 16, 2018
+Updates on progress and working in groups, including time to talk with each group separately.

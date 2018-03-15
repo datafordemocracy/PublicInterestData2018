@@ -1,3 +1,12 @@
+## 2018-03-16
+* MC: emailed groups my understanding of an outline of their work; annotated research chapter; updated `prep_basedisp.R` to add proportions by race in DSS referral data, updated `analysis_basedisp.R` to improve figures, generate disproportionality in referral point estimates and intervals by year; added more structure to report document.
+
+### Group 1
+
+* HS: This week I read and summarized my assigned article. I also did initial logit regressions comparing the chances of an investigation for white and non-white children. I ran into some issues making combined dummy variables, that will hopefully be worked out in class. My main issue is that multiracial children are classified often as black and white, so they could be counted twice. I need to figure out a way to address this. I also pulled poverty statistics by census tract for some initial judgements on poverty and investigation. 
+
+### Group 2
+
 ## 2018-03-02
 * MC: pulled together some articles -- from the research synthesis and a search in web of science of work since 2011 -- read abstracts, downloaded ones that seemed most relevant, skimmed to situate it within our work, and sent out summary info to lab; sent race coding instructions. Downoaded and wrangled ACS 5-year estimates to generate estimates of children by race in Cville, merged with summary data on referrals by race (see `prep_basedisp.R`) and started lookiing at data (see `analysis_basedisp.R`). Updated GitHub and webpages with agenda.
 

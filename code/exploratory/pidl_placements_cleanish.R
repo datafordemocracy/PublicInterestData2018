@@ -52,9 +52,11 @@ placement <- placement %>%
      resource_cat = factor(resource_cat),
      case_id = factor(case_id),
      client_id = factor(client_id),
-     exit_date = if_else(is.na(exit_date), ymd_hms("2017-12-30 23:27:05", tz = "UTC"),exit_date),
-     time_weeks = round(as.numeric(difftime(placement$exit_date, placement$entry_date), units="weeks"))
+     exit_date = if_else(is.na(exit_date), ymd_hms("2017-12-30 23:27:05", tz = "UTC"),exit_date)
     )
+
+placement <- placement %>% 
+  mutate(time_weeks = round(as.numeric(difftime(placement$exit_date, placement$entry_date), units="weeks")))
 
 # reorder columns, put time_spent near entry and exit date
 placement <-placement[c("case_id", "client_id","entry_date", "exit_date", "time_weeks", "exit_why", 

@@ -16,7 +16,7 @@ __Group 1 and Group 2__ (two of these should be assigned to each group)
 * *bowman_etal_2009 - WI case: investigation, substantiation, removal (BE)
 * *washingtonstate_2008 - WA case: accept referral, disposition/risk, removal
 * *rolock_2008 - IL case: investigation, substantiation, enter foster care, exit foster care (AW)
-* *johnson_etal_2008 - MN case: substantiation, cps case, out of home care (AW)
+* *johnson_etal_2007 - MN case: substantiation, cps case, out of home care (AW)
 * harris_hackett_2008 - qual context of referral, investigation, removal, exit
 
 __Group 1 only__

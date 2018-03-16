@@ -7,6 +7,8 @@
 
 ### Group 2
 
+* BA: 1. Read two articles alloted to me and wrote a brief summary and how that fits into our analysis. A few questions popped up while doing so which migh be helpful in our analysis. 2. Cleaned the redundant code in the R file and upated it on github. Created a pull request to include the changes in the original file. 3. Created 3 types of race variables and created vizualizations for almost all the decison points. Have few questions on how to formulate the problem for few decision points.
+
 ## 2018-03-02
 * MC: pulled together some articles -- from the research synthesis and a search in web of science of work since 2011 -- read abstracts, downloaded ones that seemed most relevant, skimmed to situate it within our work, and sent out summary info to lab; sent race coding instructions. Downoaded and wrangled ACS 5-year estimates to generate estimates of children by race in Cville, merged with summary data on referrals by race (see `prep_basedisp.R`) and started lookiing at data (see `analysis_basedisp.R`). Updated GitHub and webpages with agenda.
 

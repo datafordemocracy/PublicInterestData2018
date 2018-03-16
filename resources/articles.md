@@ -41,3 +41,4 @@ __Group 2 only__
 __Anyone__
 * hines_etal_04 - research review (NPa)
 * duarte_summers_2013 - recommendations (NPa)
+* johnson-motoyama_etal_2017 (MWu)

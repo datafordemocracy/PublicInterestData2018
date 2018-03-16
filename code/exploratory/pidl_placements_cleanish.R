@@ -40,7 +40,10 @@ names(foster_care) <- c("locality", "case_id", "client_id", "ssn", "sys_entry", 
                         "race_hawpac", "race_white", "race_utd", "race_dec", "race_unknown",
                         "ftf_count", "ftf_homecount")
 
-# change characters into factors
+# change characters into factors and including a end date based on when the data
+# was retrieved the  for children still in the system
+# and added a new variable for time spent in each foster care placement in weeks and rounded it off
+# to make it whole weeks.
 placement <- placement %>%
    mutate(
      exit_why = factor(exit_why),
@@ -48,16 +51,12 @@ placement <- placement %>%
      resource_type = factor(resource_type),
      resource_cat = factor(resource_cat),
      case_id = factor(case_id),
-     client_id = factor(client_id)
+     client_id = factor(client_id),
+     exit_date = if_else(is.na(exit_date), ymd_hms("2017-12-30 23:27:05", tz = "UTC"),exit_date)
     )
 
-# create a new variable for time spent in each foster care placement
-time_weeks <- as.numeric(difftime(placement$exit_date, placement$entry_date), units="weeks", na.rm = TRUE)
-
-# add time spent in that placement as a column
-placement <- placement %>%
-  mutate(
-    time_weeks)
+placement <- placement %>% 
+  mutate(time_weeks = round(as.numeric(difftime(placement$exit_date, placement$entry_date), units="weeks")))
 
 # reorder columns, put time_spent near entry and exit date
 placement <-placement[c("case_id", "client_id","entry_date", "exit_date", "time_weeks", "exit_why", 
@@ -79,8 +78,6 @@ sum(!complete.cases(subset(placement,select= -c(awol_begin, awol_end)))) ## 102 
 # 99 missing exit dates(might be still in placements mentioned) and 3 missing values for care_type.
 
 summary(placement)
-placement %>% filter(is.na(care_type))
-## might not be a problem because we have a similar column resource_type
 
 
 # ...........................................................................................................................
@@ -98,18 +95,16 @@ num_place <- placement %>%
   summarise(num_placements_client = n())
 
 
-# number of placements by category
+# number of placements by resource category
 num_place_bycat <- placement %>% 
   group_by(case_id, client_id, resource_cat) %>% 
   summarise(num_placements_cat_client = n())
 
-# total time in out of home care, does not include time in ongoing placement
-## might not give proper values for clients in care at present and have more than 1 placements
-## because it won't add the present time at placement, so ongoing cases are excluded
-tic_client <- placement %>% 
-  group_by(case_id, client_id)
-time_total <- summarise(tic_client, time_in_care = sum(time_weeks))
-
+# total time in out of home care, does include time in ongoing placement
+time_total <- placement %>% 
+  group_by(case_id, client_id) %>% 
+  summarise(time_in_care = sum(time_weeks))
+  
 
 # combining all the summarised numbers to the origina dataset using left_join
 placement <- left_join(placement,clients_per_case, by=c("case_id" = "case_id"))
@@ -219,7 +214,7 @@ names(fcare_placehist) <- c("case_id", "client_id", "place_entry_date","place_ex
 # DATA VISUALIZATION
 
 # dismissal from the system by race
-p1 <- ggplot(data = fcare_placehist, aes(x = fct_infreq(sys_dis_why)))
+p1 <- ggplot(data =care_placement, aes(x = fct_infreq(dis_why)))
 p1 + geom_bar(aes(fill = race)) + coord_flip()
 p1 + geom_bar(aes(fill = race), position = "fill") + coord_flip() 
 

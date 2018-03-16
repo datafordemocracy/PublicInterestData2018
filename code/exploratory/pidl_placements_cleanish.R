@@ -40,7 +40,8 @@ names(foster_care) <- c("locality", "case_id", "client_id", "ssn", "sys_entry", 
                         "race_hawpac", "race_white", "race_utd", "race_dec", "race_unknown",
                         "ftf_count", "ftf_homecount")
 
-# change characters into factors
+# change characters into factors and including a end date based on when the data
+# was retrieved the  for children still in the system
 placement <- placement %>%
    mutate(
      exit_why = factor(exit_why),
@@ -48,7 +49,8 @@ placement <- placement %>%
      resource_type = factor(resource_type),
      resource_cat = factor(resource_cat),
      case_id = factor(case_id),
-     client_id = factor(client_id)
+     client_id = factor(client_id),
+     exit_date = if_else(is.na(exit_date), ymd_hms("2017-12-30 23:27:05", tz = "UTC"),exit_date)
     )
 
 # create a new variable for time spent in each foster care placement

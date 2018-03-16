@@ -76,8 +76,6 @@ sum(!complete.cases(subset(placement,select= -c(awol_begin, awol_end)))) ## 102 
 # 99 missing exit dates(might be still in placements mentioned) and 3 missing values for care_type.
 
 summary(placement)
-placement %>% filter(is.na(care_type))
-## might not be a problem because we have a similar column resource_type
 
 
 # ...........................................................................................................................
@@ -95,18 +93,16 @@ num_place <- placement %>%
   summarise(num_placements_client = n())
 
 
-# number of placements by category
+# number of placements by resource category
 num_place_bycat <- placement %>% 
   group_by(case_id, client_id, resource_cat) %>% 
   summarise(num_placements_cat_client = n())
 
-# total time in out of home care, does not include time in ongoing placement
-## might not give proper values for clients in care at present and have more than 1 placements
-## because it won't add the present time at placement, so ongoing cases are excluded
-tic_client <- placement %>% 
-  group_by(case_id, client_id)
-time_total <- summarise(tic_client, time_in_care = sum(time_weeks))
-
+# total time in out of home care, does include time in ongoing placement
+time_total <- placement %>% 
+  group_by(case_id, client_id) %>% 
+  summarise(time_in_care = sum(time_weeks))
+  
 
 # combining all the summarised numbers to the origina dataset using left_join
 placement <- left_join(placement,clients_per_case, by=c("case_id" = "case_id"))
@@ -216,7 +212,7 @@ names(fcare_placehist) <- c("case_id", "client_id", "place_entry_date","place_ex
 # DATA VISUALIZATION
 
 # dismissal from the system by race
-p1 <- ggplot(data = fcare_placehist, aes(x = fct_infreq(sys_dis_why)))
+p1 <- ggplot(data =care_placement, aes(x = fct_infreq(dis_why)))
 p1 + geom_bar(aes(fill = race)) + coord_flip()
 p1 + geom_bar(aes(fill = race), position = "fill") + coord_flip() 
 

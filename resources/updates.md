@@ -4,6 +4,7 @@
 ### Group 1
 
 * HS: This week I read and summarized my assigned article. I also did initial logit regressions comparing the chances of an investigation for white and non-white children. I ran into some issues making combined dummy variables, that will hopefully be worked out in class. My main issue is that multiracial children are classified often as black and white, so they could be counted twice. I need to figure out a way to address this. I also pulled poverty statistics by census tract for some initial judgements on poverty and investigation. 
+* NP: I read the assigned four articles carefully and made annotation that I thought could be useful to the project. I also tried to build models based on our discussion last class. Besides, through my readings, it seems considering changes in policies would make our analysis become too complex, since the changes could have different influence on different races.
 
 ### Group 2
 

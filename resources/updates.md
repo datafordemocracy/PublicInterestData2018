@@ -1,3 +1,6 @@
+## 2018-03-23
+* MC: emailed lab with my updates, plans for Friday, and race coding review; wrote/added progress doc to box; work on report document.
+
 ## 2018-03-16
 * MC: emailed groups my understanding of an outline of their work; annotated research chapter; updated `prep_basedisp.R` to add proportions by race in DSS referral data, updated `analysis_basedisp.R` to improve figures, generate disproportionality in referral point estimates and intervals by year; added more structure to report document, and started adding a little bit of content.
 

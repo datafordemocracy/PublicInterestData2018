@@ -90,5 +90,5 @@ Time (ish) | Task/Goal
 1:50 | More on annotation of article (it's unlikely we'll have any time remaining, but hope springs eternal!)
 
 
-## March 16, 2018
+## March 16 & 23, & 30, 2018
 Updates on progress and working in groups, including time to talk with each group separately.

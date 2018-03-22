@@ -1,6 +1,14 @@
 ## 2018-03-23
 * MC: emailed lab with my updates, plans for Friday, and race coding review; wrote/added progress doc to box; work on report document.
 
+### Group 1
+
+* NP: I reviewed order logit regression and logit regression. And I use it to fit the disposition level. I separate founded levels from the other conditions and then train the data to see the relationship between race and disposition level.
+I also use order logit regression to see the relationship between gender and disposition level, gender+race and disposition level.  Based on the model I built, white male tend to have a higher disposition level while multiracial male tend to have a lower disposition level. Besides, male tend to have a higher disposition level than female.
+* MW: This week my group continued to create more models for the disposition variables. I went through past emails and documents, and added a progress document to the Box. While our group meeting time was hindered by the snow, we are continuing to progress with the analysis, and are starting to add the results to the final report.
+
+### Group 2
+
 ## 2018-03-16
 * MC: emailed groups my understanding of an outline of their work; annotated research chapter; updated `prep_basedisp.R` to add proportions by race in DSS referral data, updated `analysis_basedisp.R` to improve figures, generate disproportionality in referral point estimates and intervals by year; added more structure to report document, and started adding a little bit of content.
 

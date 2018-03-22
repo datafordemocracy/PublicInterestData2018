@@ -6,6 +6,7 @@
 * NP: I reviewed order logit regression and logit regression. And I use it to fit the disposition level. I separate founded levels from the other conditions and then train the data to see the relationship between race and disposition level.
 I also use order logit regression to see the relationship between gender and disposition level, gender+race and disposition level.  Based on the model I built, white male tend to have a higher disposition level while multiracial male tend to have a lower disposition level. Besides, male tend to have a higher disposition level than female.
 * MW: This week my group continued to create more models for the disposition variables. I went through past emails and documents, and added a progress document to the Box. While our group meeting time was hindered by the snow, we are continuing to progress with the analysis, and are starting to add the results to the final report.
+* HS: This week I improved upon my regression analysis of Investigation status for the DSS data. I conducted regressions controlling for race, tract, gender, abuse type and priority. I am still working out how to visually show the probability of an investigation by tract, so that will be something to work on. I am also interested in doing another set of regressions for finding levels. 
 
 ### Group 2
 

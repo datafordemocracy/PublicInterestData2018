@@ -7,8 +7,11 @@
 I also use order logit regression to see the relationship between gender and disposition level, gender+race and disposition level.  Based on the model I built, white male tend to have a higher disposition level while multiracial male tend to have a lower disposition level. Besides, male tend to have a higher disposition level than female.
 * MW: This week my group continued to create more models for the disposition variables. I went through past emails and documents, and added a progress document to the Box. While our group meeting time was hindered by the snow, we are continuing to progress with the analysis, and are starting to add the results to the final report.
 * HS: This week I improved upon my regression analysis of Investigation status for the DSS data. I conducted regressions controlling for race, tract, gender, abuse type and priority. I am still working out how to visually show the probability of an investigation by tract, so that will be something to work on. I am also interested in doing another set of regressions for finding levels. 
+* JM: I've looked more in depth at the referral_clients data. I'm also looking into creating more logit regressions for different race factors. In addition, I'm familiarizing myself with what a regression actually produces and to try to find a way to visualize my findings. Currently they are available as snippets of code. For next week I will try to add some information to the LaTeX file and reorganize things in Box.
 
 ### Group 2
+
+* CM: This week, I consolidated my group’s progress into an R markdown document with an HTML output (both on Box) so we can organize our thoughts and communicate with the rest of the class. I also added some new and different visualizations. Next week, I want to learn more about logit models and the Cox proportional hazard model.
 
 ## 2018-03-16
 * MC: emailed groups my understanding of an outline of their work; annotated research chapter; updated `prep_basedisp.R` to add proportions by race in DSS referral data, updated `analysis_basedisp.R` to improve figures, generate disproportionality in referral point estimates and intervals by year; added more structure to report document, and started adding a little bit of content.

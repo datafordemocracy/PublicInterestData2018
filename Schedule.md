@@ -90,5 +90,15 @@ Time (ish) | Task/Goal
 1:50 | More on annotation of article (it's unlikely we'll have any time remaining, but hope springs eternal!)
 
 
-## March 16 & 23, & 30, 2018
+## March 16, 2018
 Updates on progress and working in groups, including time to talk with each group separately.
+
+## March 23, 2018
+
+* Getting model results out of R and into LaTeX with [stargazer](https://cran.r-project.org/web/packages/stargazer/index.html). 
+* Update on report structure, [see report](https://www.sharelatex.com/)
+* Group updates on progress and working in groups
+* Deliverables by next Friday: 
+  * well-commented scripts for analysis (in adherence with [code review criteria](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/resources/codereview.md)) -- if it's not in an accessible and reproducible script, we can't use it;
+  * revised progress reports in Box folder that clearly describe the provided scripts, outlining what steps have been taken for data cleaning, wrangling, analysis, visualization, and table production in each (if more than one); 
+  * inclusion of prose in report describing work, and any tables or figures proposed for use.

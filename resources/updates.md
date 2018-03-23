@@ -12,6 +12,7 @@ I also use order logit regression to see the relationship between gender and dis
 ### Group 2
 
 * CM: This week, I consolidated my group’s progress into an R markdown document with an HTML output (both on Box) so we can organize our thoughts and communicate with the rest of the class. I also added some new and different visualizations. Next week, I want to learn more about logit models and the Cox proportional hazard model.
+* AW: 1. This week I learned from Charlotte's code and did some exploration and tried to use ggplot to make charts that I thought was useful from my reading last week. I also read some more articles on how to analyze since I think this would be the best way I could contribute.
 
 ## 2018-03-16
 * MC: emailed groups my understanding of an outline of their work; annotated research chapter; updated `prep_basedisp.R` to add proportions by race in DSS referral data, updated `analysis_basedisp.R` to improve figures, generate disproportionality in referral point estimates and intervals by year; added more structure to report document, and started adding a little bit of content.

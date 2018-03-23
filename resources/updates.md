@@ -8,6 +8,7 @@ I also use order logit regression to see the relationship between gender and dis
 * MW: This week my group continued to create more models for the disposition variables. I went through past emails and documents, and added a progress document to the Box. While our group meeting time was hindered by the snow, we are continuing to progress with the analysis, and are starting to add the results to the final report.
 * HS: This week I improved upon my regression analysis of Investigation status for the DSS data. I conducted regressions controlling for race, tract, gender, abuse type and priority. I am still working out how to visually show the probability of an investigation by tract, so that will be something to work on. I am also interested in doing another set of regressions for finding levels. 
 * JM: I've looked more in depth at the referral_clients data. I'm also looking into creating more logit regressions for different race factors. In addition, I'm familiarizing myself with what a regression actually produces and to try to find a way to visualize my findings. Currently they are available as snippets of code. For next week I will try to add some information to the LaTeX file and reorganize things in Box.
+* MW: As our group ran regressions on the Investigation on race, track, and abuse type, I began compiling our graphs and takeaways onto a final report document that we will edit and eventually link to the class's final report.
 
 ### Group 2
 

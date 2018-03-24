@@ -24,6 +24,7 @@ I also use order logit regression to see the relationship between gender and dis
 * NP: I read the assigned four articles carefully and made annotation that I thought could be useful to the project. I also tried to build models based on our discussion last class. Besides, through my readings, it seems considering changes in policies would make our analysis become too complex, since the changes could have different influence on different races.
 * MW: I read the required articles and am just about to read the additional one! Our group is working to split the tasks you suggested for us in the previous email. I am particularly going to start looking at the following this weekend: time to first contact.
 * MW: This week I summarized the krase 2015 article. I also worked on the referral dataset from last week, making the reporter relation variable into more general categories.
+* JM: I familiarized myself with research done on disproportionality and disparity in child welfare from children in NYC.  It was pretty eye opening since it allowed me to see the raw statistics of children in another state. Something to keep in mind from reading this was that no matter what policy changes are implemented, we must maintain a wary mind on the effectiveness of the policy. This can be done by doing different analysis on state and county levels to see where the problem lies.
 
 ### Group 2
 
@@ -42,6 +43,7 @@ I also use order logit regression to see the relationship between gender and dis
 * HS: This week my group met and revised our work plan to include only questions relating to the referral and the on going data. We discussed some initial thoughts about exploring this data and how to code the new race variables. In the end, we split up different outcomes to graph visually with race to get a feel for the distribution of our data. We will present these in class. 
 * MW: I met with my team members to discuss how we should reframe our proposal to focus on the referral data. We came up with a few new variables, and decided which ones to do exploratory analysis on. I was assigned to graph the differences between first reporter relation for each race, which I uploaded to our team google drive.
 * MW: My group and I (Group 1) met and determined our new questions using only the Referral and Ongoing Clients data. We organized what charts we wanted to use to determine the relationship between race and the data points (we choose mostly bar charts for now) and split them up accordingly. I made the bar charts for (Acceptance Frequency vs. Race) and (Screened Out vs. Race) for each of the 3 definitions of race we defined last class to see any differences between the results. I also made a google powerpoint to help the group show their results while I am not there in person. 
+* JM: This week our group met to discuss which variables to look at specifically to perform our first analysis. I am in charge of Initial contact time. It was tough since I had to figure out to find a numeric in which the time in and time out could be represented. Through this, I made a visualization of frequency of children vs time spent.
 
 ### Group 2
 
@@ -58,6 +60,7 @@ I also use order logit regression to see the relationship between gender and dis
 * MW: This week I met with my group, where we discussed the variables and outcomes we wanted to use in tackling the problem. We made our discussion into a written report, which was then submitted. One thing we had trouble with was figuring out how to visualize any models we made, since the default decision tree output is not easily readable to an outsider.
 * HS: This week I met up with my group and we talked through and created research plan based on the question we were given. This was mostly successful, though we do have some questions about our ability to pull neighborhood income from census tract and probably need more information about welfare policies that have changed over time that might affect our results. 
 * MW: This week, our group developed our outline for research question #2: Racial disparity in post-referral decision points. Individually, I learned how to run the Monte Carlo analysis for the sensitivity of independent variables on dependent variables on excel. The result will be in the form of a distribution with confidence intervals, as well as an indication of the topmost "sensitive" variables in terms of influencing the dependent variable. Once our group runs the regression on our post-referral decision points, I hope to see if this analysis will add value and increased specificity to our analysis on R. 
+* JM: This week we breaking up into groups to tackle different parts of the problem statement. We met up as a group to discuss the research plan and were able to create a written report. We also talked about our role as researchers in this project. Personally, I will go through Hadley's chapter 23-25.
 
 ### Group 2
 
@@ -74,6 +77,7 @@ I also use order logit regression to see the relationship between gender and dis
 * NP: Since last week in class our group realized that data visualization will be very important,  I am exploring new ways right now. Also, I am doing research about children’s psychology. I want to know whether we should keep exploring the age and gender effects. 
 * AW: I was able to go through the explore_referraldata and my group's ongoing_clients data searched up functions that I didn't understand and didn't have a full grasp of. I now have more background on how the data is structured and better understand what should be done.
 * MW: This week I looked more into potential tests we can do to analyze the data. There is this spreadsheet-based application called Oracle Crystal Ball that can be used to find the "sensitivity" of various variables and the impact of their potential values on the ultimate output variable. This could be used if later one we want to run a regression analysis on how various factors impact the likelihood of a child with being screened in. There are also other analyses on the probability and sensitivity of various variables on an outcome, called the Monte Carlo and Tornado Analysis. I will be attending a session on using Crystal Ball this afternoon so I will have a better idea of how to use it afterward. 
+* JM: This week I created a personal R script of initial analysis based on a cleaning of CPS_Ongoing which was submitted to the box. I also commented on the code of others. Finally, I made sure that my code was compatible with VeraCrypt, which for some reason works differently between windows and mac which might serve as a point of error in terms of open source data. I also added to the data dictionary after our meeting with Jenny last week.
 
 ## 2018-02-09
 * MC: updated explore_referraldata.R -- added comments, more cleaning, more exploration; set Friday's agenda, added code review questions
@@ -83,7 +87,7 @@ I also use order logit regression to see the relationship between gender and dis
 
 * AW: My group and I explored the data for the Ongoing Clients, we were able to clean the data for it to be in a clearer format. I was also able to walk through our exploration R file from class and try to understand the steps. 
 * HS: We explored the data set On_Going reports and renamed variables to make them clearer. We also factored categorical data points. We set up a meeting with Jenny Jones at DSS to explore our questions further.
-
+* JM: This week my team and I met with Jenny from the Department of Social Services. We were able to parse further information from the Data Dictionary which will influence our analysis. I personally cleaned CPS_Ongoing but had questions about what items should be factors.
 
 ### Group 2
 

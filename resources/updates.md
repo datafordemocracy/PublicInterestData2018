@@ -1,3 +1,7 @@
+## 2018-03-30
+* MC: explored data linking -- details at linkingdata.md; examined implications of coding of race -- details at racevar.md; generated example of clustered standard errors in R, and example of extracting initial foster care placement; updated baseline disproportionality 
+
+
 ## 2018-03-23
 * MC: emailed lab with my updates, plans for Friday, and race coding review; wrote/added progress doc to box; work on report document.
 

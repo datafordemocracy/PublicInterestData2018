@@ -13,6 +13,7 @@
 
 * AW: I read through and edited the report on LaTex. I also added information for our Group's section and started brainstorming for the discussion & implication section. I played around with the html file that Charlotte made for our group last time.
 * BA: Worked with Charlotte to understand the limitations of the data and discussed the potential solutions to merging the foster care data with referral data. Discusssed about selection of visualizations that needs to go into the report based on what is it that gets stakeholders would like to see. Finally, learnt the updates from the last weeks class. 
+* CM: All scripts and the progress report have been updated to reflect the decision to limit the data to three years. I also added graphs and language to the LaTeX document, tried different visualizations for the data, and updated our group progress report. I have some questions about which models to include, and what language is relevant and or appropriate. 
 
 ## 2018-03-23
 * MC: emailed lab with my updates, plans for Friday, and race coding review; wrote/added progress doc to box; work on report document.

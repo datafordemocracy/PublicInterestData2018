@@ -1,7 +1,7 @@
 ## Implications of "race" as a variable
 Looking at our data, some analyses don't include enough racial categories other than "white" and "black" and "multi-racial" (in some cases, all of whom are multi-racial black/white) to easily allow for greater disaggregation (e.g., the four categories of race4 below). Specifically, the counts by race are
 * For referrals: 709 white, 1532 black, 414 multi-racial (385 are black/white multi-racial), 51 in other racial categories
-* Among referrals accepted: 7371 white, 76 black, 203 multi-racial (185 are black/white multi-racial), 28 in other categories
+* Among referrals accepted: 371 white, 76 black, 203 multi-racial (185 are black/white multi-racial), 28 in other categories
 * Among investigated cases: 75 white, 188 black, 66 multi-racial (64 are black/white multi-racial), 3 in other categories
 * Among active cases entering 7/1/2014 or later: 64 white, 232 black, 27 multi-racial (24 are black/white multi-racial), 8 in other categories
 * Among foster care cases entering 7/1/2014 or later: 26 white, 53 black, 36 multi-racial (36 are black/white multi-racial), 3 in other categories. 

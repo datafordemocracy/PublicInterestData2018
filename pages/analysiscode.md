@@ -17,6 +17,8 @@
 3. Generate visualization of proportions of children by race in Charlottesville and proportions of children referred to CWS (see [`analysis_basedisp.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_basedisp.R)).
 
 4. Calculate racial disproportionatilty by race, the ratio of % of [racial cateogry] children referred to CWS to % of [racial category] children in population (e.g., % referred to CWS who are white/% children in Cville who are white). Generate point estimates and estimates for lower and upper bounds of estimated population proportions (see [`analysis_basedisp.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_basedisp.R)).
+
+5. Pull Charlottesville Census tract data for child population and poverty rates; generate maps for child population, poverty rates, referral rates. See [`prep_tract.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/prep_tractdata.R).
   
 ### Estimate racial disparity in post-referral decision points, modeling decision outcomes as a function of race and other characteristics.
 
@@ -24,7 +26,8 @@
 2. Screened in -- referred children screened in (accepted as a case) as a function of race and covariates
 3. Investigation -- accepted/screened in children assigned to investigation or assessment (alternative response) as a function of race and covaraites
 4. Substantiation -- outcome of investigations for investigated cases as a function of race and covariates
-5. Time to contact -- length of time between referral and contact by DSS for accepted cases
+5. Level of substantiaion -- level of finding among substantiated cases
+See [`prep_postreferral.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataprep/prep_postreferral.R), [`figures_postreferral.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/figures_postreferral.R), and [`analysis_postreferral.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_postreferral.R).
 
 ### Estimate racial disparity in foster care outcomes, modeling outcomes as a function of race and other characteristics.
 

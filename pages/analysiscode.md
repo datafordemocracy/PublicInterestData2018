@@ -27,6 +27,7 @@
 3. Investigation -- accepted/screened in children assigned to investigation or assessment (alternative response) as a function of race and covaraites
 4. Substantiation -- outcome of investigations for investigated cases as a function of race and covariates
 5. Level of substantiaion -- level of finding among substantiated cases
+
 See [`prep_postreferral.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataprep/prep_postreferral.R), [`figures_postreferral.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/figures_postreferral.R), and [`analysis_postreferral.R`](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_postreferral.R).
 
 ### Estimate racial disparity in foster care outcomes, modeling outcomes as a function of race and other characteristics.

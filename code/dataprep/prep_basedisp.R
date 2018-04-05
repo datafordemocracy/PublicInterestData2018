@@ -9,10 +9,10 @@
 ######################################################################################
 
 rm(list=ls())
-setwd("~/Box Sync/mpc/dataForDemocracy/pidl/PIDL2018/code/acsdata/")
 library(tidyverse)
 library(tidycensus)
-library(readr)
+library(readxl)
+setwd("~/Box Sync/mpc/dataForDemocracy/pidl/PIDL2018/code/acsdata/")
 
 
 ######################################################################################
@@ -130,48 +130,69 @@ setwd("/Volumes/NO NAME")
 load("referral.RData") # created in explore_referraldata.R
 summary(referral$ref_date) # verify earliest and latest referral date
 
-# referral counts by race (race4 categories) 
-cwspop <- referral %>% 
-  mutate(source = ifelse(ref_date < as.POSIXct("2015-07-01 00:00:00"), "cws15", 
-                          ifelse(ref_date > as.POSIXct("2016-06-30 00:00:00"), "cws17",
-                          "cws16")), 
-         race = ethnicity,
-         race = recode(race, "Asian" = "Other", "Unknown" = "Other")) %>% 
+# referral counts by race (race4 categories) by year
+refyrpop <- referral %>% 
+  mutate(source = ifelse(ref_date < as.POSIXct("2015-07-01 00:00:00"), "ref15", 
+                          ifelse(ref_date > as.POSIXct("2016-06-30 00:00:00"), "ref17",
+                          "ref16")), 
+         race = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other")) %>% 
   group_by(source, race) %>% 
-  summarize(refs = n(), number = n_distinct(client_id)) %>% 
+  summarize(number = n_distinct(client_id)) %>% 
   mutate(moe = NA)
 
-# referral counts by race (race2 categories)
-cwspop2 <- referral %>% 
-  mutate(source = ifelse(ref_date < as.POSIXct("2015-07-01 00:00:00"), "cws15", 
-                          ifelse(ref_date > as.POSIXct("2016-06-30 00:00:00"), "cws17",
-                                 "cws16")), 
-         race = ethnicity,
-         race = recode(race, "Black" = "Children of Color", "Asian" = "Children of Color", "Unknown" = "Children of Color", "Multi-Race" = "Children of Color", "White" = "White Children")) %>% 
+# referral counts by race (race2 categories) by year
+refyrpop2 <- referral %>% 
+  mutate(source = ifelse(ref_date < as.POSIXct("2015-07-01 00:00:00"), "ref15", 
+                          ifelse(ref_date > as.POSIXct("2016-06-30 00:00:00"), "ref17",
+                                 "ref16")), 
+         race = recode(ethnicity, "Black" = "Children of Color", "Asian" = "Children of Color", "Unknown" = "Children of Color", "Multi-Race" = "Children of Color", "White" = "White Children")) %>% 
   group_by(source, race) %>% 
-  summarize(refs = n(), number = n_distinct(client_id)) %>% 
+  summarize(number = n_distinct(client_id)) %>% 
   mutate(moe = NA)
 
-### b. ongoing cases data ###
+# referral counts by race (race4 categories) 3 year total
+refpop <- referral %>% 
+  mutate(source = "ref", 
+         race = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other")) %>% 
+  group_by(race) %>% 
+  summarize(source = first(source), number = n_distinct(client_id)) %>% 
+  mutate(moe = NA) %>% 
+  select(source, everything())
+
+# referral counts by race (race2 categories) 3 year total
+refpop2 <- referral %>% 
+  mutate(source = "ref",
+    race = recode(ethnicity, 
+                       "Black" = "Children of Color", "Asian" = "Children of Color", 
+                       "Unknown" = "Children of Color", "Multi-Race" = "Children of Color", 
+                       "White" = "White Children")) %>% 
+  group_by(race) %>% 
+  summarize(source = first(source), number = n_distinct(client_id)) %>% 
+  mutate(moe = NA) %>% 
+  select(source, everything())
+
+### b. active cases data ###
 active <- read_excel("cville_dss_data_2017.xlsx", sheet = 2) # load from spreadsheet
 
 # active case counts by race (race4 categories)
 activepop <- active %>% 
   rename(race = `Primary Ethnicity`, client_id = `Client ID`) %>% 
   mutate(race = recode(race, "Asian" = "Other", "Unknown" = "Other")) %>% 
+  filter(`Client Involvement Start` > as.Date("2014-06-30")) %>% 
   group_by(race) %>% 
   summarize(number = n_distinct(client_id)) %>% 
-  mutate(source = "act17", refs = NA, moe = NA) %>% 
-  select(source, race, refs, number, moe)
+  mutate(source = "act17", moe = NA) %>% 
+  select(source, everything())
 
 # active case counts by race (race2 categories)
 activepop2 <- active %>% 
   rename(race = `Primary Ethnicity`, client_id = `Client ID`) %>% 
   mutate(race = recode(race, "Black" = "Children of Color", "Asian" = "Children of Color", "Unknown" = "Children of Color", "Multi-Race" = "Children of Color", "White" = "White Children")) %>% 
+  filter(`Client Involvement Start` > as.Date("2014-06-30")) %>% 
   group_by(race) %>% 
   summarize(number = n_distinct(client_id)) %>% 
-  mutate(source = "act17", refs = NA, moe = NA) %>% 
-  select(source, race, refs, number, moe)
+  mutate(source = "act17", moe = NA) %>% 
+  select(source, everything())
 
 ### c. foster care data ###
 foster <- read_excel("cville_dss_data_2017.xlsx", sheet = 3) # load from spreadsheet
@@ -180,40 +201,44 @@ foster <- read_excel("cville_dss_data_2017.xlsx", sheet = 3) # load from spreads
 fosterpop <- foster %>% 
   rename(race = RACE, client_id = CL_ID, exit_date = `Exit Care Date`) %>% 
   mutate(race = recode(race, "Asian" = "Other", "Unknown" = "Other")) %>% 
-  filter(is.na(exit_date)) %>%  # only cases in foster care as of June 30, 2017
+  filter(`Enter Care Date` > as.Date("2014-06-30")) %>% # only cases entering foster care as of 7/1/14
+#  filter(is.na(exit_date)) %>%  # only cases remaining in foster care as of June 30, 2017
   group_by(race) %>% 
   summarize(number = n_distinct(client_id)) %>% 
-  mutate(source = "fos17", refs = NA, moe = NA) %>% 
-  select(source, race, refs, number, moe)
+  mutate(source = "fos17", moe = NA) %>% 
+  select(source, everything())
 
 # foster care case counts by race (race2 categories)
 fosterpop2 <- foster %>% 
   rename(race = RACE, client_id = CL_ID, exit_date = `Exit Care Date`) %>% 
   mutate(race = recode(race, "Black" = "Children of Color", "Asian" = "Children of Color", "Unknown" = "Children of Color", "Multi-Race" = "Children of Color", "White" = "White Children")) %>% 
-  filter(is.na(exit_date)) %>%  # only cases in foster care as of June 30, 2017
+  filter(`Enter Care Date` > as.Date("2014-06-30")) %>% # only cases entering foster care as of 7/1/14
+  #  filter(is.na(exit_date)) %>%  # only cases remaining in foster care as of June 30, 2017
   group_by(race) %>% 
   summarize(number = n_distinct(client_id)) %>% 
-  mutate(source = "fos17", refs = NA, moe = NA) %>% 
-  select(source, race, refs, number, moe)
+  mutate(source = "fos17", moe = NA) %>% 
+  select(source, everything())
 
 
 ######################################################################################
 # 4. Create combined data frames for analysis: cwspopacs, acspopcws
 ######################################################################################
-### a. reformat childpop to bind onto cwspop, activepop, fosterpop (race4): cwspopacs (long) ###
-childlong <- childpop %>% mutate(source = "acs16", refs = NA) %>% 
+### a. reformat childpop to bind onto refyrpop, refpop, activepop, fosterpop (race4): cwspopacs (long) ###
+childlong <- childpop %>% mutate(source = "acs16") %>% 
   rename(number = estimate) %>% 
   filter(race != "Total") %>% 
-  select(source, race, refs, number, moe)
+  select(source, race, number, moe)
 
 # bind acs to cws data
-cwspopacs4 <- bind_rows(cwspop, activepop, fosterpop, childlong)
+cwspopacs4 <- bind_rows(childlong, refyrpop, refpop, activepop, fosterpop)
 # make race a factor (and order for visualization)
 cwspopacs4 <- cwspopacs4 %>% 
   mutate(race = factor(race, levels = c("White", "Other", "Multi-Race", "Black")))
 
-### b. reformat cwspop, activepop, fosterpop to join onto childpop (race4): acspopcws (wide) ###
-cwspopwide <- cwspop %>% select(source, race, number) %>% 
+### b. reformat refyrpop, refpop, activepop, fosterpop to join onto childpop (race4): acspopcws (wide) ###
+refyrpopwide <- refyrpop %>% select(source, race, number) %>% 
+  spread(key = source, value = number)
+refpopwide <- refpop %>% select(source, race, number) %>% 
   spread(key = source, value = number)
 activepopwide <- activepop %>% select(source, race, number) %>% 
   spread(key = source, value = number)
@@ -221,10 +246,15 @@ fosterpopwide <- fosterpop %>% select(source, race, number) %>%
   spread(key = source, value = number)
 
 # generate total counts for each source 
-cwstot <- cwspopwide %>% 
-  summarize_at(vars(cws15:cws17), funs(sum)) %>% # get sum 
+refyrtot <- refyrpopwide %>% 
+  summarize_at(vars(ref15:ref17), funs(sum)) %>% # get sum 
   mutate(race = "Total") %>% # name it "Total"
   select(race, everything()) # reorder columns
+
+reftot <- refpopwide %>% 
+  summarize_at(vars(ref), funs(sum)) %>% 
+  mutate(race = "Total") %>% 
+  select(race, ref)
 
 acttot <- activepopwide %>% 
   summarize_at(vars(act17), funs(sum)) %>% 
@@ -237,9 +267,13 @@ fostot <- fosterpopwide %>%
   select(race, fos17)
 
 # calculate proportions 
-cwspopwide <- cwspopwide %>% 
-  mutate(prop15 = cws15/cwstot$cws15, prop16 = cws16/cwstot$cws16, prop17 = cws17/cwstot$cws17)
-cwspopwide <- bind_rows(cwspopwide, cwstot) # add "Total" as row
+refyrpopwide <- refyrpopwide %>% 
+  mutate(prop15 = ref15/refyrtot$ref15, prop16 = ref16/refyrtot$ref16, prop17 = ref17/refyrtot$ref17)
+refyrpopwide <- bind_rows(refyrpopwide, refyrtot) # add "Total" as row
+
+refpopwide <- refpopwide %>% 
+  mutate(refprop = ref/reftot$ref)
+refpopwide <- bind_rows(refpopwide, reftot)
 
 activepopwide <- activepopwide %>% 
   mutate(actprop = act17/acttot$act17)
@@ -250,24 +284,27 @@ fosterpopwide <- fosterpopwide %>%
 fosterpopwide <- bind_rows(fosterpopwide, fostot)
 
 # join acs and cws
-acspopcws4 <- left_join(childpop, cwspopwide, by="race")
+acspopcws4 <- left_join(childpop, refyrpopwide, by="race")
+acspopcws4 <- left_join(acspopcws4, refpopwide, by="race")
 acspopcws4 <- left_join(acspopcws4, activepopwide, by="race")
 acspopcws4 <- left_join(acspopcws4, fosterpopwide, by="race")
 
 ### c. reformat childpop2 to bind onto cwspop2 (race2): cwspopacs2 (long) ###
-childlong2 <- childpop2 %>% mutate(source = "acs16", refs = NA) %>% 
+childlong2 <- childpop2 %>% mutate(source = "acs16") %>% 
   rename(number = estimate) %>% 
   filter(race != "Total") %>% 
-  select(source, race, refs, number, moe)
+  select(source, race, number, moe)
 
 # bind acs to cws
-cwspopacs2 <- bind_rows(cwspop2, activepop2, fosterpop2, childlong2)
+cwspopacs2 <- bind_rows(childlong2, refyrpop2, refpop2, activepop2, fosterpop2)
 # make race a factor (and order for visualization)
 cwspopacs2 <- cwspopacs2 %>% 
   mutate(race = factor(race, levels = c("White Children", "Children of Color")))
 
 ### d. reformat cwspop2 to join onto childpop2 (race2): acspopcws2 (wide) ##
-cwspopwide2 <- cwspop2 %>% select(source, race, number) %>% 
+refyrpopwide2 <- refyrpop2 %>% select(source, race, number) %>% 
+  spread(key = source, value = number)
+refpopwide2 <- refpop2 %>% select(source, race, number) %>% 
   spread(key = source, value = number)
 activepopwide2 <- activepop2 %>% select(source, race, number) %>% 
   spread(key = source, value = number)
@@ -275,9 +312,13 @@ fosterpopwide2 <- fosterpop2 %>% select(source, race, number) %>%
   spread(key = source, value = number)
 
 # calculate proportions (use totals from above)
-cwspopwide2 <- cwspopwide2 %>% 
-  mutate(prop15 = cws15/cwstot$cws15, prop16 = cws16/cwstot$cws16, prop17 = cws17/cwstot$cws17)
-cwspopwide2 <- bind_rows(cwspopwide2, cwstot) # add "Total" as row
+refyrpopwide2 <- refyrpopwide2 %>% 
+  mutate(prop15 = ref15/refyrtot$ref15, prop16 = ref16/refyrtot$ref16, prop17 = ref17/refyrtot$ref17)
+refyrpopwide2 <- bind_rows(refyrpopwide2, refyrtot) # add "Total" as row
+
+refpopwide2 <- refpopwide2 %>% 
+  mutate(refprop = ref/reftot$ref)
+refpopwide2 <- bind_rows(refpopwide2, reftot)
 
 activepopwide2 <- activepopwide2 %>% 
   mutate(actprop = act17/acttot$act17) 
@@ -288,13 +329,20 @@ fosterpopwide2 <- fosterpopwide2 %>%
 fosterpopwide2 <- bind_rows(fosterpopwide2, fostot)
 
 # join acs and cws
-acspopcws2 <- left_join(childpop2, cwspopwide2, by="race")
+acspopcws2 <- left_join(childpop2, refyrpopwide2, by="race")
+acspopcws2 <- left_join(acspopcws2, refpopwide2, by="race")
 acspopcws2 <- left_join(acspopcws2, activepopwide2, by="race")
 acspopcws2 <- left_join(acspopcws2, fosterpopwide2, by="race")
 
 
-# saved work
-rm(active, activepop, activepop2, activepopwide, activepopwide2, acttot, childlong, childlong2, childpop, childpop2, cwspop, cwspop2, cwspopwide, cwspopwide2, cwstot, foster, fosterpop, fosterpop2, fosterpopwide, fosterpopwide2, fostot, kids, kids2, kids3, p, referral, referrers, totpop, yes_no_levels)
+# clean up and save work
+rm(list = ls(pattern = "act")) 
+rm(list = ls(pattern = "child")) 
+rm(list = ls(pattern = "fos")) 
+rm(list = ls(pattern = "kid")) 
+rm(list = ls(pattern = "ref")) 
+rm(fips_codes, p, totpop, yes_no_levels)
+
 setwd("~/Box Sync/mpc/dataForDemocracy/pidl/PIDL2018/code/acsdata/")
 save.image("cville_acs.Rdata")
 # load("cville_acs.Rdata")

@@ -1,3 +1,6 @@
+## 2018-04-06
+* MC: finished/updated disproportionality section; made Cville tract maps or child pop, referral rates, poverty rates and added to report. merged group 1 scripts into prep_postreferral.R, figures_postreferral.R, analysis_postreferral.R; added comments; made figures consistent throughout; added logit models for accept, tweaked logit models for investigate, substantiate, severity. Worked on matching referral and active for additional analysis (contact count and duration of services).
+
 ## 2018-03-30
 * MC: explored data linking -- details at linkingdata.md; examined implications of coding of race -- details at racevar.md; generated example of clustered standard errors in R, and example of extracting initial foster care placement; updated baseline disproportionality. Adding to report.
 

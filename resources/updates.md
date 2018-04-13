@@ -1,3 +1,6 @@
+## 2018-04-13
+* MC: finished updating postreferral models (analysis_postreferral.R), added to document; generated initial figure summarizing model results for race (figure_predictions.R) and added to document.
+
 ## 2018-04-06
 * MC: finished/updated disproportionality section; made Cville tract maps or child pop, referral rates, poverty rates and added to report. merged group 1 scripts into prep_postreferral.R, figures_postreferral.R, analysis_postreferral.R; added comments; made figures consistent throughout; added logit models for accept, tweaked logit models for investigate, substantiate, severity. Worked on matching referral and active for additional analysis (contact count and duration of services).
 

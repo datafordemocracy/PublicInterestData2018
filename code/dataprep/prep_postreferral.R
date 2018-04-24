@@ -58,12 +58,12 @@ referral$hispanic <- recode(referral$hispanic, "D" = "N", "U" = "N")
 
 # Create race4 and race2 variables
 referral <- referral %>% 
-  mutate(race4 = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other"), # leave White, Black, and Multi-Race alone; recode Asian and Other to Other
+  mutate(race4 = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other", "Multi-Race"="Multiracial"), # leave White, Black, alone; recode Asian and Other to Other
          race2 = recode(ethnicity, "Black" = "Children of Color", "Asian" = "Children of Color", 
                         "Unknown" = "Children of Color", "Multi-Race" = "Children of Color", 
                         "White" = "White Children"),
          race3 = recode(race4, "Black" = "Black/Other", "Asian" = "Black/Other", "Unknown" = "Black/Other", "Other" = "Black/Other"),
-         race4 = fct_relevel(race4, levels = "Black", "Multi-Race", "Other", "White"))
+         race4 = fct_relevel(race4, levels = "Black", "Multiracial", "Other", "White"))
 
 # Create multi-racial categories
 referral <- referral %>% 
@@ -135,11 +135,11 @@ active <- active %>%
 
 # Create race4 and race2 variables
 active <- active %>% 
-  mutate(race4 = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other"), # leave White, Black, and Multi-Race alone; recode Asian and Other to Other
+  mutate(race4 = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other", "Multi-Race" = "Multiracial"), # leave White, Black alone; recode Asian and Other to Other
          race2 = recode(ethnicity, "Black" = "Children of Color", "Asian" = "Children of Color", 
                         "Unknown" = "Children of Color", "Multi-Race" = "Children of Color", 
                         "White" = "White Children"),
-         race4 = fct_relevel(race4, levels = "Black", "Multi-Race", "Other", "White"))
+         race4 = fct_relevel(race4, levels = "Black", "Multiracial", "Other", "White"))
 
 # Create multi-racial categories
 active <- active %>% 

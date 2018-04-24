@@ -44,7 +44,7 @@ referral %>% filter(!(is.na(relation6))) %>%
   annotate("text", x = 5, y = c(75, 325, 375, 435), label = c("59", "16", "2", "23"), color = "white") +
   annotate("text", x = 6, y = c(75, 525, 590, 700), label = c("59", "12", "2", "27"), color = "white") +
   coord_flip()
-ggsave("reporterRelation.pdf") 
+ggsave("reporterRelation.pdf", width=9, height=6, units="in") 
 
 
 ######################################################################################
@@ -64,9 +64,9 @@ ggplot(referral, aes(x = accept)) +
   scale_x_discrete(labels=c("Y" = "Accepted/Screened In", "N" = "Screened Out")) +  
   scale_y_continuous(labels = percent) +
   annotate("text", x = c(1,2), y = 1.05, label = c("1,378","1,328")) +
-  annotate("text", x = 1, y = c(.1, .63, .72, .85), label = c("28.7", "7.5", "1.0", "13.7"), color = "white") +
-  annotate("text", x = 2, y = c(.1, .63, .72, .85), label = c("27.9", "7.8", "1.0", "12.5"), color = "white")
-ggsave("accepted_race4.pdf") 
+  annotate("text", x = 1, y = c(.1, .63, .72, .85), label = c("56.3", "14.7", "2.0", "26.9"), color = "white") +
+  annotate("text", x = 2, y = c(.1, .63, .74, .85), label = c("56.9", "15.9", "1.7", "25.5"), color = "white")
+ggsave("figures/accepted_race4.pdf", width=9, height=6, units="in")  
 
 
 ######################################################################################
@@ -88,7 +88,7 @@ referral %>% filter(!(is.na(invest2))) %>%
   annotate("text", x = c(1,2), y = 1.05, label = c("1,046","332")) +
   annotate("text", x = 1, y = c(.1, .63, .71, .85), label = c("56.2", "13.1", "2.4", "28.3"), color = "white") +
   annotate("text", x = 2, y = c(.1, .63, .77, .85), label = c("56.6", "19.9", "1.0", "22.6"), color = "white")
-ggsave("investigated_race4.pdf") 
+ggsave("investigated_race4.pdf", width=9, height=6, units="in")   
 
 
 ######################################################################################
@@ -112,7 +112,7 @@ referral %>% filter(!(is.na(disp4))) %>%
   annotate("text", x = 2, y = c(.1, .85), label = c("75.0", "25.0"), color = "white") +
   annotate("text", x = 3, y = c(.1, .85), label = c("74.4", "25.6"), color = "white") +
   annotate("text", x = 4, y = c(.1, .85), label = c("77.6", "22.4"), color = "white")
-ggsave("substantiation_race2.pdf") 
+ggsave("substantiation_race2.pdf", width=9, height=6, units="in")    
 
 
 ######################################################################################

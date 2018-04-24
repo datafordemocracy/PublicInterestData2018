@@ -35,7 +35,7 @@ cwspopacs4 %>% filter(source %in% c("ref15", "ref16", "ref17", "acs16")) %>% arr
   annotate("text", x = 3, y = c(.1, .61, .725, .85), label = c("56.3", "14.9", "1.9", "26.9"), color = "white") +
   annotate("text", x = 4, y = c(.1, .6, .68, .85), label = c("55.6", "10.1", "3.3", "31.1"), color = "white") +
   annotate("text", x = c(1,2,3,4), y = 1.05, label = c("7084 (± 314)","410", "536", "790"))
-ggsave("referral_race4.pdf") # can be .png, .pdf, .eps, .ps, .tiff, .bmp, .svg, .wfm
+ggsave("referral_race4.pdf", width=9, height=6, units="in") # can be .png, .pdf, .eps, .ps, .tiff, .bmp, .svg, .wfm
 
 # by race2
 cwspopacs2 %>% filter(source %in% c("ref15", "ref16", "ref17", "acs16")) %>% arrange(race) %>% 
@@ -53,7 +53,7 @@ cwspopacs2 %>% filter(source %in% c("ref15", "ref16", "ref17", "acs16")) %>% arr
   annotate("text", x = 3, y = c(.3, .85), label = c("73.1", "26.9"), color = "white") +
   annotate("text", x = 4, y = c(.3, .85), label = c("68.9", "31.1"), color = "white") +
   annotate("text", x = c(1,2,3,4), y = 1.05, label = c("7084 (± 314)", "410", "536", "790"))
-ggsave("referral_race2.pdf") 
+ggsave("referral_race2.pdf", width=9, height=6, units="in") 
 
 
 ####################################################################################
@@ -116,7 +116,7 @@ ggplot(acspopcws4_ref, aes(x=year, y=mi, fill=race)) +
   annotate("text", x = c(1.7, 1.9, 2.1, 2.3), y = c(1.1, 1.1, .9, .9), label = c("2.08", "1.86", "0.31", "0.46"), color = "white") +
   annotate("text", x = c(2.7, 2.9, 3.1, 3.3), y = c(1.1, 1.1, .9, .9), label = c("2.05", "1.24", "0.55", "0.53"), color = "white") +
   coord_flip()
-ggsave("referral_rdi_race4.pdf") 
+ggsave("referral_rdi_race4.pdf", width=9, height=6, units="in") 
 
 # by race2
 # gather the data frame
@@ -143,7 +143,7 @@ ggplot(acspopcws2_ref, aes(x=year, y=mi, fill=race)) +
   annotate("text", x = c(1.8, 2.2), y = c(1.07, .92), label = c("1.78", "0.46"), color = "white") +
   annotate("text", x = c(2.8, 3.2), y = c(1.07, .92), label = c("1.68", "0.53"), color = "white") +
   coord_flip()
-ggsave("referral_rdi_race2.pdf") 
+ggsave("referral_rdi_race2.pdf", width=9, height=6, units="in") 
 
 
 ####################################################################################
@@ -168,7 +168,7 @@ cwspopacs4 %>%
   annotate("text", x = 3, y = c(.1, .735, .79, .87), label = c("69.3", "8.4", "2.5", "19.8"), color = "white") +
   annotate("text", x = 4, y = c(.1, .62, .77, .87), label = c("44.0", "30.5", "2.5", "22.0"), color = "white") +
   annotate("text", x = c(1,2,3,4), y = 1.05, label = c("7084 (± 314)","1325", "323", "118"))
-ggsave("ref_act_fos_race4.pdf") 
+ggsave("ref_act_fos_race4.pdf", width=9, height=6, units="in") 
 
 # by race2
 cwspopacs2 %>% 
@@ -188,7 +188,7 @@ cwspopacs2 %>%
   annotate("text", x = 3, y = c(.35, .87), label = c("80.2", "19.8"), color = "white") +
   annotate("text", x = 4, y = c(.35, .87), label = c("78.0", "22.0"), color = "white") +
   annotate("text", x = c(1,2,3,4), y = 1.05, label = c("7084 (± 314)","1325", "323", "118"))
-ggsave("ref_act_fos_race2.pdf") 
+ggsave("ref_act_fos_race2.pdf", width=9, height=6, units="in") 
 
 
 ######################################################################################
@@ -250,7 +250,7 @@ ggplot(acspopcws4_all, aes(x=meas, y=mi, fill=race)) +
   annotate("text", x = c(1.7, 1.9, 2.1, 2.3), y = c(1.15, 1.15, .875, .875), label = c("2.56", "1.04", "0.42", "0.37"), color = "white") +
   annotate("text", x = c(2.7, 2.9, 3.1, 3.3), y = c(1.15, 1.15, .875, .875), label = c("2.02", "1.41", "0.50", "0.53"), color = "white") +
   coord_flip()
-ggsave("ref_act_fos_rdi_race4.pdf") 
+ggsave("ref_act_fos_rdi_race4.pdf", width=9, height=6, units="in") 
 
 # by race2
 # gather the data frame
@@ -280,7 +280,7 @@ ggplot(acspopcws2_all, aes(x=meas, y=mi, fill=race)) +
   annotate("text", x = c(1.8, 2.2), y = c(1.125, .88), label = c("1.95", "0.34"), color = "white") +
   annotate("text", x = c(2.8, 3.2), y = c(1.125, .88), label = c("1.68", "0.53"), color = "white") +
   coord_flip()
-ggsave("ref_act_fos_rdi_race2.pdf") 
+ggsave("ref_act_fos_rdi_race2.pdf", width=9, height=6, units="in") 
 
 
 ### save work

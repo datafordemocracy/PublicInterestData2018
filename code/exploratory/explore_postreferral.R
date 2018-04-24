@@ -113,6 +113,19 @@ m_accept <- glm(accept ~ race4b + female + age2 + age9 + refprior1 +
                 family = "binomial", data = referral)
 summary(m_accept)
 
+### Race effects within maltreatment types?
+m_accept <- glm(accept ~ race4b + female + age2 + age9 + refprior1,
+                family = "binomial", data = subset(referral, abuse_physical==1))
+summary(m_accept)
+# black only approaches significance among victims of alleged physical abuse
+
+
+### Race effects by census tracts?
+table(referral$tract2)
+m_accept <- glm(accept ~ race4b + female + age2 + age9 + refprior1 + maltot,
+                family = "binomial", data = subset(referral, tract2 == "000501"))
+summary(m_accept)
+# race approaches significance in tract 501 (p=.187)
 
 ######################################################################################
 # 5. Racial disparity in time to contact (or number of contacts from active)

@@ -88,7 +88,7 @@ childsum <- function(d,r){
 # apply childsum function to cville_acs_xxxxx dataframes
 kids <- childsum(cville_acs_white, "White")
 kids <- childsum(cville_acs_black, "Black")
-kids <- childsum(cville_acs_multi, "Multi-Race")
+kids <- childsum(cville_acs_multi, "Multiracial")
 kids <- childsum(cville_acs_ai_an, "ai_an")
 kids <- childsum(cville_acs_asian, "asian")
 kids <- childsum(cville_acs_nh_pi, "nh_pi")
@@ -135,7 +135,7 @@ refyrpop <- referral %>%
   mutate(source = ifelse(ref_date < as.POSIXct("2015-07-01 00:00:00"), "ref15", 
                           ifelse(ref_date > as.POSIXct("2016-06-30 00:00:00"), "ref17",
                           "ref16")), 
-         race = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other")) %>% 
+         race = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other", "Multi-Race" = "Multiracial")) %>% 
   group_by(source, race) %>% 
   summarize(number = n_distinct(client_id)) %>% 
   mutate(moe = NA)
@@ -153,7 +153,7 @@ refyrpop2 <- referral %>%
 # referral counts by race (race4 categories) 3 year total
 refpop <- referral %>% 
   mutate(source = "ref", 
-         race = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other")) %>% 
+         race = recode(ethnicity, "Asian" = "Other", "Unknown" = "Other", "Multi-Race" = "Multiracial")) %>% 
   group_by(race) %>% 
   summarize(source = first(source), number = n_distinct(client_id)) %>% 
   mutate(moe = NA) %>% 
@@ -177,7 +177,7 @@ active <- read_excel("cville_dss_data_2017.xlsx", sheet = 2) # load from spreads
 # active case counts by race (race4 categories)
 activepop <- active %>% 
   rename(race = `Primary Ethnicity`, client_id = `Client ID`) %>% 
-  mutate(race = recode(race, "Asian" = "Other", "Unknown" = "Other")) %>% 
+  mutate(race = recode(race, "Asian" = "Other", "Unknown" = "Other", "Multi-Race" = "Multiracial")) %>% 
   filter(`Client Involvement Start` > as.Date("2014-06-30")) %>% 
   group_by(race) %>% 
   summarize(number = n_distinct(client_id)) %>% 
@@ -200,7 +200,7 @@ foster <- read_excel("cville_dss_data_2017.xlsx", sheet = 3) # load from spreads
 # foster care case counts by race (race4 categories)
 fosterpop <- foster %>% 
   rename(race = RACE, client_id = CL_ID, exit_date = `Exit Care Date`) %>% 
-  mutate(race = recode(race, "Asian" = "Other", "Unknown" = "Other")) %>% 
+  mutate(race = recode(race, "Asian" = "Other", "Unknown" = "Other", "Multi-Race" = "Multiracial")) %>% 
   filter(`Enter Care Date` > as.Date("2014-06-30")) %>% # only cases entering foster care as of 7/1/14
 #  filter(is.na(exit_date)) %>%  # only cases remaining in foster care as of June 30, 2017
   group_by(race) %>% 
@@ -233,7 +233,7 @@ childlong <- childpop %>% mutate(source = "acs16") %>%
 cwspopacs4 <- bind_rows(childlong, refyrpop, refpop, activepop, fosterpop)
 # make race a factor (and order for visualization)
 cwspopacs4 <- cwspopacs4 %>% 
-  mutate(race = factor(race, levels = c("White", "Other", "Multi-Race", "Black")))
+  mutate(race = factor(race, levels = c("White", "Other", "Multiracial", "Black")))
 
 ### b. reformat refyrpop, refpop, activepop, fosterpop to join onto childpop (race4): acspopcws (wide) ###
 refyrpopwide <- refyrpop %>% select(source, race, number) %>% 

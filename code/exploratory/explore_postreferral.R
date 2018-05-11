@@ -37,7 +37,7 @@ referral <- referral %>%
          age2 = ifelse(age<=2, 1, 0),
          age9 = ifelse(age>3 & age<10, 1, 0),
          refprior1 = ifelse(refprior>0, 1,0),
-         race4b = fct_relevel(race4, "White", "Black", "Multi-Race", "Other"), # white as base
+         race4b = fct_relevel(race4, "White", "Black", "Multiracial", "Other"), # white as base
          relation6 = fct_relevel(relation6, "Educational")) # educational as baseline
 
 referral <- referral %>% mutate(negtot = neglect_medical + neglect_physical,
@@ -135,5 +135,3 @@ summary(m_accept)
 ######################################################################################
 # 6. Racial disparity in number of contacts from active cases or duration of services
 ######################################################################################
-
-

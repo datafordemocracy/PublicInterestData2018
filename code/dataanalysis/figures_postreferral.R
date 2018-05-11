@@ -1,6 +1,6 @@
 ######################################################################################
 # DS 5559: Public Interest Data Lab 
-# Generate baseline figures for report
+# Generate baseline figures for report: referral data
 # 1. Racial composition and reporter relation 
 # 2. Racial disparity in accepted cases among referred
 # 3. Racial disparity in assignment to investigation vs. assessment among accepted

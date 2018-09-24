@@ -36,8 +36,7 @@ Our client for this spring is the City of Charlottesville's Department of Social
     + [Figures and visualizations of disproportionality](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/figures_postreferral.R) in `figures_postreferral.R`.
     + [Figures and visualizations of outcome predictions](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/figure_predictions.R) in `figures_predictions.R`.
     
-  + **Foster care data**: Foster care clients entering care between July 1, 2014 to June 30, 2017 (n=118). Includes race, age, and gender of child; age child entered custody, date child entered custody, date child existed custody, and reason for exit; child’s current/final placement type and the number of face-to-face interactions between DSS and the child. 
-    + Data in the `fc` data frame.
+  + **Foster care data**: Foster care clients entering care between July 1, 2014 to June 30, 2017 (n=118). Includes race, age, and gender of child; age child entered custody, date child entered custody, date child existed custody, and reason for exit; child’s current/final placement type and the number of face-to-face interactions between DSS and the child. Data in the `fc` data frame.
     + [Cleaning script](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataprep/prep_fostercare.R) in `prep_fostercare.R`.
     + [Analysis](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_fostercare.R) in `analysis_fostercare.R`.
     + [Figures and visualizations of disproportionality](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/figures_fostercare.R) in `figures_fostercare.R`.

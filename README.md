@@ -53,51 +53,43 @@ Our client for this spring is the City of Charlottesville's Department of Social
 ## Report Index
 
 ### 3) Racial Disproportionality in Charlottesville
-  * Figure 1
-      + Top Panel: *Population Proportions and Referral Proportions by Race*
-          + created in section 1 of  [analysis_basedisp.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_basedisp.R).
-      + Bottom Panel: *Racial Disproportionality Index in Referrals*
-          + created in section 2 of  [analysis_basedisp.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_basedisp.R).
-  + Figure 2
-      + Top Panel: *Population Proportions and CPS Client Proportions by Race*
-        + created in section 3 of  [analysis_basedisp.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_basedisp.R).
-      + Bottom Panel: *Racial Disproportionality Index for CPS Clients*
-        + created in section 4 of  [analysis_basedisp.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_basedisp.R).
-  + Figure 3
-      + Top Left Panel: *Black Residents in Charlottesville by Census Tract*
-        + created in section 3 of [prep_tractdata.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/prep_tractdata.R)
-      + Top Right Panel: *Charlottesville's Poverty Rates by Census Tract*
-        + created in section 3 of [prep_tractdata.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/prep_tractdata.R)
-      + Bottom Panel: *Referrals to Charlottesville CPS by Census Tract*
-        + created in section 3 of [prep_tractdata.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/prep_tractdata.R)
+  * **Figure 1** created by [analysis_basedisp.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_basedisp.R)
+      + Top Panel: *Population Proportions and Referral Proportions by Race*, created in section 1   
+      + Bottom Panel: *Racial Disproportionality Index in Referrals*, created in section 2 
+  + **Figure 2** created by [analysis_basedisp.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/master/code/dataanalysis/analysis_basedisp.R)
+      + Top Panel: *Population Proportions and CPS Client Proportions by Race*, created in section 3
+      + Bottom Panel: *Racial Disproportionality Index for CPS Clients*, created in section 4
+  + **Figure 3** created by [prep_tractdata.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/prep_tractdata.R)
+      + Top Left Panel: *Black Residents in Charlottesville by Census Tract*, created in section 3
+      + Top Right Panel: *Charlottesville's Poverty Rates by Census Tract*, created in section 3
+      + Bottom Panel: *Referrals to Charlottesville CPS by Census Tract*, created in section 3
 
 ### 4) Post Referral Outcomes
-  + Figure 4
-      +  Right Panel: *Reporter Relation to Referred Children*, created in section 1 of [figures_postreferral.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_postreferral.R).
-  + Figure 5
-      + Top Panel: *Children Accepted for Investigation/Assessment*, created in section 2 of [figures_postreferral.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_postreferral.R).
-      + Bottom Panel: *Case Assigned to Investigation or Assessment*, created in section 3 of [figures_postreferral.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_postreferral.R).
-  + Figure 6
-      + Top Panel: *Substantiation of Investigated Cases*, created in section 4 of [figures_postreferral.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_postreferral.R).
-  + Figure 7
-      + Top Panel: *Effect of Race on Post−Referral Outcomes*, created in section 1 of [figures_predictions.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_predictions.R).
+  + **Figure 4** created by [figures_postreferral.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_postreferral.R)
+      +  Right Panel: *Reporter Relation to Referred Children*, created in section 1
+  + **Figure 5** created by [figures_postreferral.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_postreferral.R)
+      + Top Panel: *Children Accepted for Investigation/Assessment*, created in section 2
+      + Bottom Panel: *Case Assigned to Investigation or Assessment*, created in section 3
+  + **Figure 6** created by [figures_postreferral.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_postreferral.R)
+      + Top Panel: *Substantiation of Investigated Cases*, created in section 4 of 
+  + **Figure 7** created by [figures_predictions.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_predictions.R)
+      + Top Panel: *Effect of Race on Post−Referral Outcomes*, created in section 1
 
 ### 5) Racial Disparity: Foster Care Outcomes
-  + Figure 8
-      + Right Panel: *Number of Foster Care Clients by Race*, created in section 1 of [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-  + Figure 9
-      + Top Panel: *Initial Placement Category by Race*, created in section 2 of [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-      + Bottom Panel: *Placement Category by Race*, created in section 3 of [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-  + Figure 10
-      + Top Panel: *Time in Each Placement By Race*, created in section 6 of [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-      + Middle Panel: *Number of Placements By Race*, created in section 5 of [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-      + Bottom Panel: *Duration of Care By Race (All Clients)*, created in section 7 of [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-  + Figure 11
-      + Top Panel: *Nature of Exit from Foster Care by Race*, created in section 4 of [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-  + Figure 12
-      + Top Panel: *Effect of Race on Foster Care Placements*, created in section 1 of [figures_fostercarepredictions.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-      + Bottom Panel: *Effect of Race on Foster Care Outcomes*, created in section 1 of [figures_fostercarepredictions.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R).
-      
+  + **Figure 8** created by [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R)
+      + Right Panel: *Number of Foster Care Clients by Race*, created in section 1
+  + **Figure 9** created by [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R)
+      + Top Panel: *Initial Placement Category by Race*, created in section 2
+      + Bottom Panel: *Placement Category by Race*, created in section 3 
+  + **Figure 10** created by [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R)
+      + Top Panel: *Time in Each Placement By Race*, created in section 6 
+      + Middle Panel: *Number of Placements By Race*, created in section 5 
+      + Bottom Panel: *Duration of Care By Race (All Clients)*, created in section 7
+  + **Figure 11** created by [figures_fostercare.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R)
+      + Top Panel: *Nature of Exit from Foster Care by Race*, created in section 4 
+  + **Figure 12** created by [figures_fostercarepredictions.R](https://github.com/datafordemocracy/PublicInterestData2018/blob/d82ea7d7132adaecb0adca6a8c300a09e58a169d/code/dataanalysis/figures_fostercare.R)
+      + Top Panel: *Effect of Race on Foster Care Placements*, created in section 1
+      + Bottom Panel: *Effect of Race on Foster Care Outcomes*, created in section 1
       
       
       
